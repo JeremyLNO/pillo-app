@@ -11,7 +11,11 @@ struct PilloComplication: Widget {
         }
         .configurationDisplayName(Text("widget.displayName"))
         .description(Text("widget.description"))
+        #if os(watchOS)
         .supportedFamilies([.accessoryCircular, .accessoryRectangular, .accessoryInline, .accessoryCorner])
+        #else
+        .supportedFamilies([.accessoryCircular, .accessoryRectangular, .accessoryInline])
+        #endif
     }
 }
 
