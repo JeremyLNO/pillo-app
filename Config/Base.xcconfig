@@ -1,0 +1,36 @@
+// Shared across all environments. Environment-specific files (Debug/Staging/Release)
+// include this one and override only what differs (APP_ENVIRONMENT, REMOTE_CONFIG_URL).
+//
+// NOTE: xcconfig files treat "//" as a comment delimiter, which would silently truncate
+// any "https://..." value at the colon. Every URL below inserts "$()" (an empty build
+// setting reference) between the colon and the slashes so the two slashes are never
+// literally adjacent to the parser, while still resolving to the real URL at build time.
+
+APP_NAME = "Pillo Tracker"
+BUNDLE_IDENTIFIER = company.lno.pillo
+
+// TODO: replace with the real App Store Connect numeric ID once the app is created there.
+APP_STORE_ID = 0000000000
+APP_STORE_URL = https:$()//apps.apple.com/app/id$(APP_STORE_ID)
+APP_STORE_REVIEW_URL = https:$()//apps.apple.com/app/id$(APP_STORE_ID)?action=write-review
+
+// TODO: replace with the real OneSignal App ID when push (Phase 2) is wired up.
+ONESIGNAL_APP_ID = TODO_ONESIGNAL_APP_ID
+
+CRAZYBEE_WEBSITE_URL = https:$()//crazybeelabs.com/
+CRAZYBEE_SUPPORT_URL = https:$()//crazybeelabs.com/support/
+// No dedicated account-creation URL exists yet — falls back to the website root per spec section 19.
+CRAZYBEE_ACCOUNT_URL = https:$()//crazybeelabs.com/
+CRAZYBEE_COMMITMENT_URL = https:$()//www.crazybeelabs.com/commitment
+// TODO: publish real privacy policy / terms pages and update these.
+PRIVACY_POLICY_URL = https:$()//crazybeelabs.com/privacy/
+TERMS_URL = https:$()//crazybeelabs.com/terms/
+// TODO: only needed once a remote update-check JSON is actually published (Phase 2+).
+REMOTE_CONFIG_URL =
+
+DEVELOPMENT_TEAM = 2E6D4Q69QB
+CODE_SIGN_STYLE = Automatic
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+SWIFT_VERSION = 6.0
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1

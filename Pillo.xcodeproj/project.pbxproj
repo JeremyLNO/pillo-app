@@ -1,0 +1,1846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653ABD036BCC19A5F090068E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F426B9A4641BD87BFBC779 /* MainTabView.swift */; };
+		5EAE50F01561CA16B4BA9C17 /* PilloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B8C4D96483C7FA659B194 /* PilloApp.swift */; };
+		89747BD45088447E6FD467BE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01F56928DFCE630027E76A /* RootView.swift */; };
+		C29C416E76242F2BCF81A5EA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947D9D2993385A3B1A0F075 /* AppConfiguration.swift */; };
+		AAFFF7FC77FA257C60404DD0 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FA3274461F003F263513D /* AppEnvironment.swift */; };
+		8E540070D650A1B2D8A2C0FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C1485468F45B4F6078051 /* Card.swift */; };
+		1FE2B48D487A56A4610BF5F7 /* CrazyBeeLabsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29312E6D6E437C4D1718A2FA /* CrazyBeeLabsFooterView.swift */; };
+		94E49947795144FEE28DA353 /* DiscreetModeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD62E5ADD0FF953DB4BFC3D2 /* DiscreetModeEnvironment.swift */; };
+		D1F69BEC9843E2BA5D06B702 /* PilloWordmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E059B220F63E605B8CE32F /* PilloWordmark.swift */; };
+		9B96D9791D11241E52CA517E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7EBEA05A50BB2740CA3F2 /* PrimaryButton.swift */; };
+		2CC5054DC754575A1F4956ED /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F439229049A6DEBC20A5287 /* ProgressRing.swift */; };
+		9D05CA8A45C909C834AB52C5 /* StatTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F42899695B5AE6B5F069BBF /* StatTile.swift */; };
+		6A6D00F8BBCDEFF5273AA7F5 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFD3C21306BED536A83EA9 /* AppLanguage.swift */; };
+		6C07FB9F5362170E7C3C4EE2 /* LanguageResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6425EE3746E22689C0E15B /* LanguageResolver.swift */; };
+		5746F1CD8149E292DCF88676 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58779428C78D83799E0D4D /* LocalizationService.swift */; };
+		F2C4D7414EF0CF92C5CDDE08 /* LocalizationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDCBE692479FC034D9073C /* LocalizationServicing.swift */; };
+		C0D289758E3E5581E7EDE56D /* DeepLinkRouterServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5062D6742BD2CD3B30F61DC /* DeepLinkRouterServicing.swift */; };
+		7857CA1B05D5BC047D8697C9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B91A7061AC855CB1C541B /* Route.swift */; };
+		9BBFBAC83CBD29FAF971AFB1 /* BackgroundRefreshTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DB1161FF6546381DEA146 /* BackgroundRefreshTask.swift */; };
+		8F16E520364C20BE2422D864 /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F73AC4EF99807F619CA56 /* LocalNotificationService.swift */; };
+		EF82CC02A37EADA9BCAF854A /* NotificationCategoryRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540324FC6F523D0E40B49D5B /* NotificationCategoryRegistrar.swift */; };
+		6DD8B55CCF976A3058897637 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330AF2CCAE23CC8B87EC45B /* NotificationDelegate.swift */; };
+		F2A409ABA7079ABA4CD1E3D0 /* ReminderCounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65324DFA460137E68A8D9F31 /* ReminderCounterStore.swift */; };
+		36FF3BE44FCE803B86FE29C9 /* TimeZoneChangeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B1953E92FE8591CEC59F7 /* TimeZoneChangeSheet.swift */; };
+		7A76B14F17E97EF0D806413B /* PersistenceController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5CBBFEE70E32736EBC046F /* PersistenceController+Preview.swift */; };
+		B57F2BCD1484EC2F1A3A97F3 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1CEC46FC392AF7BADD84C /* ServiceContainer.swift */; };
+		82F74D0AFABDE957DECCDD5F /* AppLockServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D189A850422C8AF84E6546 /* AppLockServicing.swift */; };
+		2548BF5C51D41DCE83E9B026 /* BiometricLockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B349B8EB30D938188F63C /* BiometricLockService.swift */; };
+		B18457AB19F1FD2FDF38DEAC /* BiometricLockServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615EBC13B8F9DF2C42F5B0A /* BiometricLockServicing.swift */; };
+		56008B284E5B8F3CAEBAE07D /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8E9AF91200065FCF099D04 /* KeychainStore.swift */; };
+		1BA00421517A96A623743DE1 /* LockGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6BB14EF49F1DDF2E9DB54 /* LockGateView.swift */; };
+		1D40A11CA6FF8AC1502D154F /* AdaptiveReminderCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD2E5FC90898451DF14351 /* AdaptiveReminderCalculator.swift */; };
+		B4C9BB1F2F08079512069E94 /* BlisterPackScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A4815DC88B6D245C07FCA /* BlisterPackScanner.swift */; };
+		4A33F5AFA7D71AFAA46CE3DE /* DataExportServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345ECAFB3DEAF456451AE877 /* DataExportServicing.swift */; };
+		E55E7F8F6C8C48CBB906876E /* FallbackRuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B12F11351E6F9B415DC942F /* FallbackRuleEngine.swift */; };
+		35FD2C68C6978BE916FFDDDB /* HistoryExportServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780F8CB34DA7EAF4F21E6C29 /* HistoryExportServicing.swift */; };
+		F1B7E0A90946A4B6EA869C01 /* MandatoryUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FEF1F6A2278D3EF3FD68F9 /* MandatoryUpdateView.swift */; };
+		BEC24F40F4B8B7042D93126C /* PillScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4D739C764720F9C4ABD2E /* PillScheduleCalculator.swift */; };
+		2E8D3C79CDFC7B4C51ED24D3 /* PillScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACE2EAAACA319A8E37B876 /* PillScheduleService.swift */; };
+		C039FDB378EA08DEB74CA3E6 /* PillScheduleServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB37D3AE9C7A05FD35E7E8 /* PillScheduleServicing.swift */; };
+		5FE01626C39D7C8BC61F3A0F /* RuleEngineServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C684FE78BFA8AB7FD1DC14D /* RuleEngineServicing.swift */; };
+		891F133BA52083571056CD17 /* SemanticVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A4E949786BA71FFE34812 /* SemanticVersion.swift */; };
+		602192F4500A3BF33E5FC5E8 /* StockServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7682E56B51C380BB129446 /* StockServicing.swift */; };
+		2648C68196599DD44C9A20C9 /* URLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35665E60046314FCF0F035E5 /* URLValidator.swift */; };
+		6A25FBB68354C95F5E389574 /* UpdateAvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC7B9770EAFC2922F27A1D /* UpdateAvailabilityService.swift */; };
+		AB609ABF544B178684B59BB3 /* UpdateAvailabilityServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E428A1C860A55A9CF9C6226 /* UpdateAvailabilityServicing.swift */; };
+		9C47C2B250FFD8F347A05611 /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD07F677EF345A9D3C79342 /* WatchConnectivityService.swift */; };
+		052E0282E41A58B53ADB124D /* WidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A856634E0AD8E9727EC8BA /* WidgetBridge.swift */; };
+		FD9CCD887EFB63C4B93AA759 /* OneSignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5B5A6D0EEC8B643E8E6F4 /* OneSignalService.swift */; };
+		229CA728424C8B4B47953BA6 /* OneSignalServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F057C7DDA0B7532274F66F8 /* OneSignalServicing.swift */; };
+		23EF2F94488E4F12BF79D01B /* AccountRowLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05663E33E3217D1CF547259A /* AccountRowLink.swift */; };
+		BC1CC27798ECA309DE848B7A /* BlisterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164AE23690109B6DE28EA7EC /* BlisterGridView.swift */; };
+		CD7B51C7D7659679C4949607 /* BlisterLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BFCD92683921C9EE281E27 /* BlisterLegendView.swift */; };
+		EA0C24DA66D6C5D5383BD304 /* BlisterPackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87B8602CD9784A95E00930 /* BlisterPackView.swift */; };
+		578FE8B2031D4A7D559EDD94 /* BlisterPackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9004B8D92919DC8F335A1D0 /* BlisterPackViewModel.swift */; };
+		F114DB76EFBECB72425BE111 /* CorrectPastDoseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0367DFB3A6B3BA467F87B /* CorrectPastDoseSheet.swift */; };
+		9E05F719E1498EA4229D111D /* CommitmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3818D5E180F9175ED8CEEE8A /* CommitmentView.swift */; };
+		DDD5EFF9849F7734F2CA0BE5 /* AddNoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F6C25C9A83F13926EA177 /* AddNoteSheet.swift */; };
+		01EFC5512B1BCFA0497F063D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD360F0D9685071BD259FB /* HistoryView.swift */; };
+		5FB7225E7F0E575E4A62B36A /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9A564E83E6BD58951DFED4 /* HistoryViewModel.swift */; };
+		078B1D0875F5640840C1F053 /* MonthCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A33784AD7B059B7A0F01F03 /* MonthCalendarGridView.swift */; };
+		A03DCCE9E762D92DD00B442E /* RegularityBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7568F936A97DCDC9B46DCB /* RegularityBarChartView.swift */; };
+		38AD6458875B2EC8E9E30449 /* SymptomChipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA96B84C80C4830F9EA736E /* SymptomChipsView.swift */; };
+		70A8CE3F5A58B338ADFD9D40 /* BlisterMiniGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC4F2871F4C4A07BD575E5 /* BlisterMiniGridView.swift */; };
+		AD685885C895C95C784AC2F0 /* HomeStatTilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD92106FEC7EF8B9AE107F2 /* HomeStatTilesView.swift */; };
+		B1A859552A1AEF6EB68ED4D0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD9045EF708D43EB57ED36E /* HomeView.swift */; };
+		7CD1BF205D66330DC043F647 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FEE6FDF2829878B33A2FDA /* HomeViewModel.swift */; };
+		AFEF31D7C92D08C2D4942A26 /* NextBreakBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838967C54770DF993CD0E7A1 /* NextBreakBanner.swift */; };
+		1AF8B8F0B831B7EE0525934C /* TodayDoseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E1C1203F77C87F2E179BD /* TodayDoseCard.swift */; };
+		70D8E8421D773DF3B65155C3 /* WeekStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8DF5AF3FDB3B34C3E5B73 /* WeekStripView.swift */; };
+		DCB3307DD4DCDEB15BB629F2 /* BlisterWeekSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFDAD2A3A7DC8B5238C375 /* BlisterWeekSelectorView.swift */; };
+		922A7483D21004572A6337D4 /* ContactProfessionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D684284B645D25A74A06 /* ContactProfessionalButton.swift */; };
+		14C58BE9B082B94F5F99D60F /* DelayButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1BB0A0A270F82210610EE /* DelayButtonsView.swift */; };
+		01350D7FD957F135E388785F /* FallbackGuidanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A631ED1D644A9559B4915C4 /* FallbackGuidanceCard.swift */; };
+		7D942949F724B5678F7C5A93 /* MissedPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE143E5BA9B54687DF6B333E /* MissedPillView.swift */; };
+		C398480F7BA475C064BB95F5 /* MissedPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5658E5A47CACD6B897022DA2 /* MissedPillViewModel.swift */; };
+		69C9F48F239F4DDC9B68A4A3 /* PillCountStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF02E087B498CC114FE0BCF /* PillCountStepperView.swift */; };
+		6A1CF8FB7B829D21E6B3F08F /* BlisterScanSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470D028B826CC6F0F64B201 /* BlisterScanSheet.swift */; };
+		94DD6C5DA8E9E4E0945441BC /* OnboardingIntroStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32826D7F29C4E7F8DC788A4 /* OnboardingIntroStep.swift */; };
+		F416D1AB0476F30483B6CF1B /* OnboardingNotificationsStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE01A86444ADFD151A946C /* OnboardingNotificationsStep.swift */; };
+		96080794DEC17B48FC3E565C /* OnboardingPillSetupStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01714FEFB5D507ABDF893ED5 /* OnboardingPillSetupStep.swift */; };
+		FABD70B9C67F630F70FAA5D8 /* OnboardingPrivacyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF4E7F1362A471F526267CB /* OnboardingPrivacyStep.swift */; };
+		AC3227FDB35557399BAC179B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975660CA6839AEB438A1334 /* OnboardingView.swift */; };
+		4B6388D73511D7581AEBCD03 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B15D4DDF45A5C58133D713 /* OnboardingViewModel.swift */; };
+		00F2F2A991A267F07F325DA5 /* ReviewRequestServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765820477EC1FB9B366024 /* ReviewRequestServicing.swift */; };
+		51D8AC1DCCA273384E3381FE /* ConfidentialiteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB21A391531952C3E9C0B92A /* ConfidentialiteSection.swift */; };
+		F8EC8B3C046BAE81F305E0D8 /* CrazyBeeLabsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BA2B690C69B58779DBA6A /* CrazyBeeLabsSection.swift */; };
+		9AE1348C2306E0C9D8488A0C /* LangueSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3600F42FD26A6FB5B324F3 /* LangueSection.swift */; };
+		C0C1E9E313E301EF64943EAD /* MaContraceptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C15F60F4DB2022012FB2E7 /* MaContraceptionSection.swift */; };
+		85A2A105D4AFCA71F7EBF3CD /* NotificationsCrazyBeeLabsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D58EF726D3281DE334676B /* NotificationsCrazyBeeLabsSection.swift */; };
+		8C2E640561005E97A147B68D /* PINSetupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CD31C2882A404FB9D57BE /* PINSetupSheet.swift */; };
+		1239095B77F997652564D2EE /* RappelsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195792141530D6480A5528CD /* RappelsSection.swift */; };
+		1E5E0DE4CAC29DF40EEDD361 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128876BA9CB203F0B32BD069 /* SettingsView.swift */; };
+		FF2AD7D138440E875DB4477F /* StockSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0869D48C2C54CC7EBC9D3F2 /* StockSection.swift */; };
+		46FCE917AFD70907C60B4AA3 /* TrustedContactSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D396FF2208DA3D06D5B7F4B /* TrustedContactSection.swift */; };
+		87496E5C8205DF96C004DB63 /* ConfirmTodayDoseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DD4C15CA5941425CB96A0D /* ConfirmTodayDoseIntent.swift */; };
+		0C3984FEFC290EA536F681B8 /* PilloShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20794A59A1C0852BA8FCA2D8 /* PilloShortcuts.swift */; };
+		AD1E2F4B4150C2C849FC8D29 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9166FE0DD80250B0E86216 /* StockView.swift */; };
+		E0B9DE08E0E06115CEFF9C27 /* SymptomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EF21130E3FEAA64316ED2 /* SymptomsView.swift */; };
+		3BB98B05B63DE2D9BECAAE49 /* SymptomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53323E7E42D2895EEF2BF3E6 /* SymptomsViewModel.swift */; };
+		77C4AA7DE99E50E411017988 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A09DF4B4CF3C5541D7963 /* AppGroup.swift */; };
+		2F58D034C6C9F4960A2BCBF1 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */; };
+		407DDE36188DA288EB7B08E6 /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */; };
+		111B927E1E48F9D2359B3815 /* BlisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A0E4EB50C2FA340E0F5 /* BlisterCell.swift */; };
+		2861EA5BB77F3F0157DA6325 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC556E21F927EAB907B40B /* Palette.swift */; };
+		94ACFD5C24495023ED096911 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70912DD31BCBD33CF1FA5073 /* Typography.swift */; };
+		B7FF194C480BB97409F68F2F /* CustomScheduleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224FF3E6198E97367C87330A /* CustomScheduleDay.swift */; };
+		4B632222135FCD12C801AB85 /* DoseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A69AA88FDCAFB8212AA64F /* DoseEvent.swift */; };
+		16E681C44A4657469892BEC1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC2A7F13A50E7FABFE6971 /* Enums.swift */; };
+		C6DDDD890657125F0AFAC706 /* NotificationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621F63B2A5802FE97AC15D0C /* NotificationPreferences.swift */; };
+		B6C4B810645E041B7227BEE4 /* PillProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FB9EF9FB85655FFB9EE69 /* PillProfile.swift */; };
+		F5E022A7CEEFB7DC70471FAE /* StockEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBD6D843E483EA5768E9243 /* StockEntry.swift */; };
+		338CF087C215DA70EBDDF138 /* SymptomEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75372B3483CC71D23037CD63 /* SymptomEntry.swift */; };
+		DC1FD71B166032CB3FA3AF6B /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B80CBC73EDFD1F57F04980 /* UserPreferences.swift */; };
+		DA683D5B383BB0A52E6CF39C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A848D6930D7CC34D6AF6FD7 /* PersistenceController.swift */; };
+		E89DA4C5AF0A82D585F626EE /* DoseChangeNotifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7B22277677C53D9F8B71C /* DoseChangeNotifying.swift */; };
+		5473F7089FA885821DC0D4EA /* DoseTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FAA5451C7BC37A0498339 /* DoseTrackingService.swift */; };
+		5DF850AA8244E322B6B74E54 /* DoseTrackingServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B3B02E251DA474B1AD30D /* DoseTrackingServicing.swift */; };
+		A999FE08C1E3C6CF9812FA46 /* LocalNotificationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F1C96AE75C50FBD02E3E8 /* LocalNotificationServicing.swift */; };
+		B89AFDB2C9110CC4489E3291 /* AdaptiveReminderCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A449EFA9A779B259F1B5D /* AdaptiveReminderCalculatorTests.swift */; };
+		82DC52415852544BC9235977 /* AppLockServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF98F354F23AD3C564FF43A /* AppLockServiceTests.swift */; };
+		649D1B7E932B91C7C21F2140 /* BlisterPackScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A431D09B619012312F542 /* BlisterPackScannerTests.swift */; };
+		7B7A3D05A97CD45B369EFF7E /* DoseTrackingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5890BBA628495609A6D70AA /* DoseTrackingServiceTests.swift */; };
+		38252A8A954DBD2C0DE873DE /* LanguageResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB3342ACEE11AEDB111571 /* LanguageResolverTests.swift */; };
+		95B862B0AC6A977C93C22F84 /* PillScheduleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD9F11B31EEDEC3EAB4FEC /* PillScheduleServiceTests.swift */; };
+		715D584CB473D64D518610AC /* ReviewRequestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03522DDEEF6C8E98CC2FC943 /* ReviewRequestServiceTests.swift */; };
+		3368A9C5F9BE9F50BF271D9A /* SemanticVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48C3483CFC756A72EEE747 /* SemanticVersionTests.swift */; };
+		0546461700FE4A0ABAEAFB29 /* StockServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6663556753E8EB1EEB0C9E /* StockServiceTests.swift */; };
+		F805E4165A56DA989B84F3D2 /* URLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10FC8CCA07328D8FD6BD996 /* URLValidatorTests.swift */; };
+		11B881F564E1FED253FD022F /* UpdateAvailabilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD997FD66C06467646DE304 /* UpdateAvailabilityServiceTests.swift */; };
+		992ED78EF612839830AB094D /* WidgetBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B67F85421529F9B1109F1B /* WidgetBridgeTests.swift */; };
+		433CB0FBF3ADB12E70E90CA9 /* PilloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A76CB2C5CE519F6434F020 /* PilloUITests.swift */; };
+		2D571A636BFAAE669E400A41 /* MarkDoseTakenIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78438670EDE9D035F9E6677 /* MarkDoseTakenIntent.swift */; };
+		50A3393FC8BD834D50F79005 /* NextDoseTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A7FD640A63DDF913A995D /* NextDoseTimelineProvider.swift */; };
+		5C58502C0B6B9B4209CD8068 /* PilloNextDoseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F55C1A2E1AA044E937668 /* PilloNextDoseWidget.swift */; };
+		903ACCF78E41B56146D2495D /* PilloWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5245F11027EB89DCB6912 /* PilloWidgetEntryView.swift */; };
+		54034F125A8A2F5741EA84C3 /* PilloWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D38F9E35E8F073B85C42D6 /* PilloWidgetsBundle.swift */; };
+		C637A243D22B35777C7A396D /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A09DF4B4CF3C5541D7963 /* AppGroup.swift */; };
+		5619E3111F3DC7A2A6B3D454 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */; };
+		7626E350ABE6E9ED220961C0 /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */; };
+		93722E98DC955263B6345353 /* BlisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB4A0E4EB50C2FA340E0F5 /* BlisterCell.swift */; };
+		A0FF03431D7F4307410888BE /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC556E21F927EAB907B40B /* Palette.swift */; };
+		E57850EB438E9A7C66D81E49 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70912DD31BCBD33CF1FA5073 /* Typography.swift */; };
+		72A3D2F227DFF52A8919F5EF /* CustomScheduleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224FF3E6198E97367C87330A /* CustomScheduleDay.swift */; };
+		A7469882391FFDC91F44EE8E /* DoseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A69AA88FDCAFB8212AA64F /* DoseEvent.swift */; };
+		F6662D12AB646EFDC0A66242 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC2A7F13A50E7FABFE6971 /* Enums.swift */; };
+		18C82D6E7DD55B5BAA7463C9 /* NotificationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621F63B2A5802FE97AC15D0C /* NotificationPreferences.swift */; };
+		07EC7CA3549551AA6A9A2963 /* PillProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FB9EF9FB85655FFB9EE69 /* PillProfile.swift */; };
+		1A2FE38B2FB69E3E2B1BC83F /* StockEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBD6D843E483EA5768E9243 /* StockEntry.swift */; };
+		C217CF570049779108FEE3A2 /* SymptomEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75372B3483CC71D23037CD63 /* SymptomEntry.swift */; };
+		112FA98A7BE2C7570CB303DA /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B80CBC73EDFD1F57F04980 /* UserPreferences.swift */; };
+		99A9B685E2F6720D83BEB2EE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A848D6930D7CC34D6AF6FD7 /* PersistenceController.swift */; };
+		0B827E8500D7532BF8A11C94 /* DoseChangeNotifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7B22277677C53D9F8B71C /* DoseChangeNotifying.swift */; };
+		8D0C3E47468EEB88BBC6F119 /* DoseTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FAA5451C7BC37A0498339 /* DoseTrackingService.swift */; };
+		2586E8EBE0C02E2BC7F5A84E /* DoseTrackingServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B3B02E251DA474B1AD30D /* DoseTrackingServicing.swift */; };
+		623CA13FDC78482974F82BEE /* LocalNotificationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F1C96AE75C50FBD02E3E8 /* LocalNotificationServicing.swift */; };
+		7581E92550D4EBEA08930B80 /* PilloWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276949D83996F8C638E812B /* PilloWatchApp.swift */; };
+		04370C437E394A34A6172AC4 /* WatchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593918873B37DF80308B6EB2 /* WatchHomeView.swift */; };
+		A7884AC1545993FE998F46B5 /* WatchSessionReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8730E7807EDDD80D538B690 /* WatchSessionReceiver.swift */; };
+		A7BE4522CA63B40FEBB78C96 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A09DF4B4CF3C5541D7963 /* AppGroup.swift */; };
+		02F3D0966816F40D2C97A5E2 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */; };
+		E5ED6683C6369F3C77F77E4B /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */; };
+		98BFC1F54E732C8C2EE76597 /* ComplicationTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54350E59AB86587A608286 /* ComplicationTimelineProvider.swift */; };
+		6BA1F77D1881D3E31CF24DD3 /* PilloComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5812E9623A4F38DA988CB /* PilloComplication.swift */; };
+		5E6EDFD1D07C6010DA186759 /* PilloWatchComplicationsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E12333C419496F54F50DE /* PilloWatchComplicationsBundle.swift */; };
+		126D640DC61ECB5EC792E0B3 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A09DF4B4CF3C5541D7963 /* AppGroup.swift */; };
+		E8A95880909981C2332403EE /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */; };
+		C4841564D5A160C7271630B4 /* WidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */; };
+		6DD9C133694F74FB87B20B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7172619DB15AD08404D409 /* Assets.xcassets */; };
+		D882B008C8E1D607AFA93F38 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */; };
+		4B527C71D042567659B47598 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */; };
+		B929EB850C4FA632BDA579FB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */; };
+		8C103DF2468E6F38B24E4F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFC2CC2ABA57656C71FAD43 /* Assets.xcassets */; };
+		129BC36668CC56E21B53DE29 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */; };
+		ADC2456E1605FD79E7C4B520 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 441CA140E443CD314CCCE1F6 /* OneSignalFramework */; };
+		53F85E2D092373A8A32EB350 /* PilloWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FD7488223EA0E20BD335592 /* PilloWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0347E58E01A57DF12F5007CF /* Pillo Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2F101836DB7F725A0A75EA85 /* Pillo Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6C1369CF461668DA9FDD609 /* PilloWatchComplications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 86AB1BB25043CC81743B8612 /* PilloWatchComplications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		996AD237BC284D463E664FFE /* Pillo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pillo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5FEB36355BB38F98691943 /* PilloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PilloTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9198967288169819E0B4CF /* PilloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PilloUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD7488223EA0E20BD335592 /* PilloWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PilloWidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F101836DB7F725A0A75EA85 /* Pillo Watch App.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.application"; includeInIndex = 0; path = "Pillo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86AB1BB25043CC81743B8612 /* PilloWatchComplications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PilloWatchComplications.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F426B9A4641BD87BFBC779 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTabView.swift"; sourceTree = "<group>"; };
+		F27B8C4D96483C7FA659B194 /* PilloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloApp.swift"; sourceTree = "<group>"; };
+		6A01F56928DFCE630027E76A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView.swift"; sourceTree = "<group>"; };
+		9947D9D2993385A3B1A0F075 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfiguration.swift"; sourceTree = "<group>"; };
+		0F4FA3274461F003F263513D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppEnvironment.swift"; sourceTree = "<group>"; };
+		282C1485468F45B4F6078051 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card.swift"; sourceTree = "<group>"; };
+		29312E6D6E437C4D1718A2FA /* CrazyBeeLabsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrazyBeeLabsFooterView.swift"; sourceTree = "<group>"; };
+		DD62E5ADD0FF953DB4BFC3D2 /* DiscreetModeEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscreetModeEnvironment.swift"; sourceTree = "<group>"; };
+		67E059B220F63E605B8CE32F /* PilloWordmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloWordmark.swift"; sourceTree = "<group>"; };
+		F7A7EBEA05A50BB2740CA3F2 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimaryButton.swift"; sourceTree = "<group>"; };
+		0F439229049A6DEBC20A5287 /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgressRing.swift"; sourceTree = "<group>"; };
+		2F42899695B5AE6B5F069BBF /* StatTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatTile.swift"; sourceTree = "<group>"; };
+		22FFD3C21306BED536A83EA9 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppLanguage.swift"; sourceTree = "<group>"; };
+		5A6425EE3746E22689C0E15B /* LanguageResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageResolver.swift"; sourceTree = "<group>"; };
+		2A58779428C78D83799E0D4D /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizationService.swift"; sourceTree = "<group>"; };
+		F9EDCBE692479FC034D9073C /* LocalizationServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizationServicing.swift"; sourceTree = "<group>"; };
+		E5062D6742BD2CD3B30F61DC /* DeepLinkRouterServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepLinkRouterServicing.swift"; sourceTree = "<group>"; };
+		653B91A7061AC855CB1C541B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Route.swift"; sourceTree = "<group>"; };
+		9F4DB1161FF6546381DEA146 /* BackgroundRefreshTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackgroundRefreshTask.swift"; sourceTree = "<group>"; };
+		EE6F73AC4EF99807F619CA56 /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalNotificationService.swift"; sourceTree = "<group>"; };
+		540324FC6F523D0E40B49D5B /* NotificationCategoryRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCategoryRegistrar.swift"; sourceTree = "<group>"; };
+		0330AF2CCAE23CC8B87EC45B /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationDelegate.swift"; sourceTree = "<group>"; };
+		65324DFA460137E68A8D9F31 /* ReminderCounterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderCounterStore.swift"; sourceTree = "<group>"; };
+		2E3B1953E92FE8591CEC59F7 /* TimeZoneChangeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZoneChangeSheet.swift"; sourceTree = "<group>"; };
+		CF5CBBFEE70E32736EBC046F /* PersistenceController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceController+Preview.swift"; sourceTree = "<group>"; };
+		02E1CEC46FC392AF7BADD84C /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceContainer.swift"; sourceTree = "<group>"; };
+		F3D189A850422C8AF84E6546 /* AppLockServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppLockServicing.swift"; sourceTree = "<group>"; };
+		DF2B349B8EB30D938188F63C /* BiometricLockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricLockService.swift"; sourceTree = "<group>"; };
+		F615EBC13B8F9DF2C42F5B0A /* BiometricLockServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricLockServicing.swift"; sourceTree = "<group>"; };
+		6F8E9AF91200065FCF099D04 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainStore.swift"; sourceTree = "<group>"; };
+		ECB6BB14EF49F1DDF2E9DB54 /* LockGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LockGateView.swift"; sourceTree = "<group>"; };
+		A7DD2E5FC90898451DF14351 /* AdaptiveReminderCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdaptiveReminderCalculator.swift"; sourceTree = "<group>"; };
+		2B9A4815DC88B6D245C07FCA /* BlisterPackScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterPackScanner.swift"; sourceTree = "<group>"; };
+		345ECAFB3DEAF456451AE877 /* DataExportServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataExportServicing.swift"; sourceTree = "<group>"; };
+		7B12F11351E6F9B415DC942F /* FallbackRuleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FallbackRuleEngine.swift"; sourceTree = "<group>"; };
+		780F8CB34DA7EAF4F21E6C29 /* HistoryExportServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryExportServicing.swift"; sourceTree = "<group>"; };
+		17FEF1F6A2278D3EF3FD68F9 /* MandatoryUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MandatoryUpdateView.swift"; sourceTree = "<group>"; };
+		9AA5B5A6D0EEC8B643E8E6F4 /* OneSignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneSignalService.swift"; sourceTree = "<group>"; };
+		1F057C7DDA0B7532274F66F8 /* OneSignalServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneSignalServicing.swift"; sourceTree = "<group>"; };
+		FDF4D739C764720F9C4ABD2E /* PillScheduleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillScheduleCalculator.swift"; sourceTree = "<group>"; };
+		37ACE2EAAACA319A8E37B876 /* PillScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillScheduleService.swift"; sourceTree = "<group>"; };
+		7FFB37D3AE9C7A05FD35E7E8 /* PillScheduleServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillScheduleServicing.swift"; sourceTree = "<group>"; };
+		5C684FE78BFA8AB7FD1DC14D /* RuleEngineServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuleEngineServicing.swift"; sourceTree = "<group>"; };
+		FA1A4E949786BA71FFE34812 /* SemanticVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SemanticVersion.swift"; sourceTree = "<group>"; };
+		BD7682E56B51C380BB129446 /* StockServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockServicing.swift"; sourceTree = "<group>"; };
+		35665E60046314FCF0F035E5 /* URLValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLValidator.swift"; sourceTree = "<group>"; };
+		8DEC7B9770EAFC2922F27A1D /* UpdateAvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateAvailabilityService.swift"; sourceTree = "<group>"; };
+		5E428A1C860A55A9CF9C6226 /* UpdateAvailabilityServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateAvailabilityServicing.swift"; sourceTree = "<group>"; };
+		9BD07F677EF345A9D3C79342 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchConnectivityService.swift"; sourceTree = "<group>"; };
+		C9A856634E0AD8E9727EC8BA /* WidgetBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetBridge.swift"; sourceTree = "<group>"; };
+		05663E33E3217D1CF547259A /* AccountRowLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountRowLink.swift"; sourceTree = "<group>"; };
+		164AE23690109B6DE28EA7EC /* BlisterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterGridView.swift"; sourceTree = "<group>"; };
+		72BFCD92683921C9EE281E27 /* BlisterLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterLegendView.swift"; sourceTree = "<group>"; };
+		4A87B8602CD9784A95E00930 /* BlisterPackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterPackView.swift"; sourceTree = "<group>"; };
+		B9004B8D92919DC8F335A1D0 /* BlisterPackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterPackViewModel.swift"; sourceTree = "<group>"; };
+		6DD0367DFB3A6B3BA467F87B /* CorrectPastDoseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CorrectPastDoseSheet.swift"; sourceTree = "<group>"; };
+		3818D5E180F9175ED8CEEE8A /* CommitmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommitmentView.swift"; sourceTree = "<group>"; };
+		9E4F6C25C9A83F13926EA177 /* AddNoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNoteSheet.swift"; sourceTree = "<group>"; };
+		E3BD360F0D9685071BD259FB /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryView.swift"; sourceTree = "<group>"; };
+		BB9A564E83E6BD58951DFED4 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewModel.swift"; sourceTree = "<group>"; };
+		0A33784AD7B059B7A0F01F03 /* MonthCalendarGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MonthCalendarGridView.swift"; sourceTree = "<group>"; };
+		8E7568F936A97DCDC9B46DCB /* RegularityBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegularityBarChartView.swift"; sourceTree = "<group>"; };
+		0EA96B84C80C4830F9EA736E /* SymptomChipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymptomChipsView.swift"; sourceTree = "<group>"; };
+		D5EC4F2871F4C4A07BD575E5 /* BlisterMiniGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterMiniGridView.swift"; sourceTree = "<group>"; };
+		DBD92106FEC7EF8B9AE107F2 /* HomeStatTilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeStatTilesView.swift"; sourceTree = "<group>"; };
+		6FD9045EF708D43EB57ED36E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView.swift"; sourceTree = "<group>"; };
+		39FEE6FDF2829878B33A2FDA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel.swift"; sourceTree = "<group>"; };
+		838967C54770DF993CD0E7A1 /* NextBreakBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NextBreakBanner.swift"; sourceTree = "<group>"; };
+		E65E1C1203F77C87F2E179BD /* TodayDoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodayDoseCard.swift"; sourceTree = "<group>"; };
+		80B8DF5AF3FDB3B34C3E5B73 /* WeekStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeekStripView.swift"; sourceTree = "<group>"; };
+		58DFDAD2A3A7DC8B5238C375 /* BlisterWeekSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterWeekSelectorView.swift"; sourceTree = "<group>"; };
+		7418D684284B645D25A74A06 /* ContactProfessionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactProfessionalButton.swift"; sourceTree = "<group>"; };
+		39C1BB0A0A270F82210610EE /* DelayButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DelayButtonsView.swift"; sourceTree = "<group>"; };
+		0A631ED1D644A9559B4915C4 /* FallbackGuidanceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FallbackGuidanceCard.swift"; sourceTree = "<group>"; };
+		BE143E5BA9B54687DF6B333E /* MissedPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MissedPillView.swift"; sourceTree = "<group>"; };
+		5658E5A47CACD6B897022DA2 /* MissedPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MissedPillViewModel.swift"; sourceTree = "<group>"; };
+		BAF02E087B498CC114FE0BCF /* PillCountStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillCountStepperView.swift"; sourceTree = "<group>"; };
+		E470D028B826CC6F0F64B201 /* BlisterScanSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterScanSheet.swift"; sourceTree = "<group>"; };
+		A32826D7F29C4E7F8DC788A4 /* OnboardingIntroStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingIntroStep.swift"; sourceTree = "<group>"; };
+		77DE01A86444ADFD151A946C /* OnboardingNotificationsStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingNotificationsStep.swift"; sourceTree = "<group>"; };
+		01714FEFB5D507ABDF893ED5 /* OnboardingPillSetupStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingPillSetupStep.swift"; sourceTree = "<group>"; };
+		BDF4E7F1362A471F526267CB /* OnboardingPrivacyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingPrivacyStep.swift"; sourceTree = "<group>"; };
+		7975660CA6839AEB438A1334 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingView.swift"; sourceTree = "<group>"; };
+		42B15D4DDF45A5C58133D713 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewModel.swift"; sourceTree = "<group>"; };
+		FF765820477EC1FB9B366024 /* ReviewRequestServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewRequestServicing.swift"; sourceTree = "<group>"; };
+		BB21A391531952C3E9C0B92A /* ConfidentialiteSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfidentialiteSection.swift"; sourceTree = "<group>"; };
+		646BA2B690C69B58779DBA6A /* CrazyBeeLabsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrazyBeeLabsSection.swift"; sourceTree = "<group>"; };
+		4A3600F42FD26A6FB5B324F3 /* LangueSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LangueSection.swift"; sourceTree = "<group>"; };
+		D8C15F60F4DB2022012FB2E7 /* MaContraceptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MaContraceptionSection.swift"; sourceTree = "<group>"; };
+		69D58EF726D3281DE334676B /* NotificationsCrazyBeeLabsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsCrazyBeeLabsSection.swift"; sourceTree = "<group>"; };
+		047CD31C2882A404FB9D57BE /* PINSetupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PINSetupSheet.swift"; sourceTree = "<group>"; };
+		195792141530D6480A5528CD /* RappelsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RappelsSection.swift"; sourceTree = "<group>"; };
+		128876BA9CB203F0B32BD069 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		E0869D48C2C54CC7EBC9D3F2 /* StockSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockSection.swift"; sourceTree = "<group>"; };
+		1D396FF2208DA3D06D5B7F4B /* TrustedContactSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrustedContactSection.swift"; sourceTree = "<group>"; };
+		30DD4C15CA5941425CB96A0D /* ConfirmTodayDoseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmTodayDoseIntent.swift"; sourceTree = "<group>"; };
+		20794A59A1C0852BA8FCA2D8 /* PilloShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloShortcuts.swift"; sourceTree = "<group>"; };
+		DA9166FE0DD80250B0E86216 /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockView.swift"; sourceTree = "<group>"; };
+		044EF21130E3FEAA64316ED2 /* SymptomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymptomsView.swift"; sourceTree = "<group>"; };
+		53323E7E42D2895EEF2BF3E6 /* SymptomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymptomsViewModel.swift"; sourceTree = "<group>"; };
+		3276949D83996F8C638E812B /* PilloWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloWatchApp.swift"; sourceTree = "<group>"; };
+		593918873B37DF80308B6EB2 /* WatchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchHomeView.swift"; sourceTree = "<group>"; };
+		A8730E7807EDDD80D538B690 /* WatchSessionReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchSessionReceiver.swift"; sourceTree = "<group>"; };
+		5E54350E59AB86587A608286 /* ComplicationTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComplicationTimelineProvider.swift"; sourceTree = "<group>"; };
+		43C5812E9623A4F38DA988CB /* PilloComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloComplication.swift"; sourceTree = "<group>"; };
+		A74E12333C419496F54F50DE /* PilloWatchComplicationsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloWatchComplicationsBundle.swift"; sourceTree = "<group>"; };
+		F78438670EDE9D035F9E6677 /* MarkDoseTakenIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarkDoseTakenIntent.swift"; sourceTree = "<group>"; };
+		AE4A7FD640A63DDF913A995D /* NextDoseTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NextDoseTimelineProvider.swift"; sourceTree = "<group>"; };
+		521F55C1A2E1AA044E937668 /* PilloNextDoseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloNextDoseWidget.swift"; sourceTree = "<group>"; };
+		76F5245F11027EB89DCB6912 /* PilloWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloWidgetEntryView.swift"; sourceTree = "<group>"; };
+		C7D38F9E35E8F073B85C42D6 /* PilloWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloWidgetsBundle.swift"; sourceTree = "<group>"; };
+		850A09DF4B4CF3C5541D7963 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppGroup.swift"; sourceTree = "<group>"; };
+		6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetSnapshot.swift"; sourceTree = "<group>"; };
+		B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetSnapshotStore.swift"; sourceTree = "<group>"; };
+		A4EB4A0E4EB50C2FA340E0F5 /* BlisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterCell.swift"; sourceTree = "<group>"; };
+		76AC556E21F927EAB907B40B /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Palette.swift"; sourceTree = "<group>"; };
+		70912DD31BCBD33CF1FA5073 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Typography.swift"; sourceTree = "<group>"; };
+		224FF3E6198E97367C87330A /* CustomScheduleDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomScheduleDay.swift"; sourceTree = "<group>"; };
+		11A69AA88FDCAFB8212AA64F /* DoseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoseEvent.swift"; sourceTree = "<group>"; };
+		1DCC2A7F13A50E7FABFE6971 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums.swift"; sourceTree = "<group>"; };
+		621F63B2A5802FE97AC15D0C /* NotificationPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationPreferences.swift"; sourceTree = "<group>"; };
+		A01FB9EF9FB85655FFB9EE69 /* PillProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillProfile.swift"; sourceTree = "<group>"; };
+		3EBD6D843E483EA5768E9243 /* StockEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockEntry.swift"; sourceTree = "<group>"; };
+		75372B3483CC71D23037CD63 /* SymptomEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymptomEntry.swift"; sourceTree = "<group>"; };
+		50B80CBC73EDFD1F57F04980 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserPreferences.swift"; sourceTree = "<group>"; };
+		9A848D6930D7CC34D6AF6FD7 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceController.swift"; sourceTree = "<group>"; };
+		17D7B22277677C53D9F8B71C /* DoseChangeNotifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoseChangeNotifying.swift"; sourceTree = "<group>"; };
+		763FAA5451C7BC37A0498339 /* DoseTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoseTrackingService.swift"; sourceTree = "<group>"; };
+		BA4B3B02E251DA474B1AD30D /* DoseTrackingServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoseTrackingServicing.swift"; sourceTree = "<group>"; };
+		913F1C96AE75C50FBD02E3E8 /* LocalNotificationServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalNotificationServicing.swift"; sourceTree = "<group>"; };
+		1B3A449EFA9A779B259F1B5D /* AdaptiveReminderCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdaptiveReminderCalculatorTests.swift"; sourceTree = "<group>"; };
+		BBF98F354F23AD3C564FF43A /* AppLockServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppLockServiceTests.swift"; sourceTree = "<group>"; };
+		2A4A431D09B619012312F542 /* BlisterPackScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlisterPackScannerTests.swift"; sourceTree = "<group>"; };
+		B5890BBA628495609A6D70AA /* DoseTrackingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoseTrackingServiceTests.swift"; sourceTree = "<group>"; };
+		51FB3342ACEE11AEDB111571 /* LanguageResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageResolverTests.swift"; sourceTree = "<group>"; };
+		FDDD9F11B31EEDEC3EAB4FEC /* PillScheduleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PillScheduleServiceTests.swift"; sourceTree = "<group>"; };
+		03522DDEEF6C8E98CC2FC943 /* ReviewRequestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewRequestServiceTests.swift"; sourceTree = "<group>"; };
+		FE48C3483CFC756A72EEE747 /* SemanticVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SemanticVersionTests.swift"; sourceTree = "<group>"; };
+		4D6663556753E8EB1EEB0C9E /* StockServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockServiceTests.swift"; sourceTree = "<group>"; };
+		B10FC8CCA07328D8FD6BD996 /* URLValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLValidatorTests.swift"; sourceTree = "<group>"; };
+		9AD997FD66C06467646DE304 /* UpdateAvailabilityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateAvailabilityServiceTests.swift"; sourceTree = "<group>"; };
+		D9B67F85421529F9B1109F1B /* WidgetBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetBridgeTests.swift"; sourceTree = "<group>"; };
+		79A76CB2C5CE519F6434F020 /* PilloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilloUITests.swift"; sourceTree = "<group>"; };
+		8D7172619DB15AD08404D409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		36291340F8E26B93BEB58318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07453E0A7C6C74E05CDF9B70 /* Pillo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pillo.entitlements; sourceTree = "<group>"; };
+		69723CF8402E36BAC8CDCD90 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		6A5BEAA81BEC2CD3BA9D651B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4800ACF5008F1F3FEC130B62 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		D6F9158E9B5A9C0C71EA5A96 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		3B34FEC9224FE8B6DB2A5785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C6A50AC43C3FB4018E25B /* PilloWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PilloWidgets.entitlements; sourceTree = "<group>"; };
+		31CF1F0F80B5783EF63272D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36F3FC8D26F964673554602 /* PilloWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PilloWatchApp.entitlements; sourceTree = "<group>"; };
+		7AFC2CC2ABA57656C71FAD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1097B500F38278523005C5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A00E90FEC2B214A3F57D073 /* PilloWatchComplications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PilloWatchComplications.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FCBC29864E7C7752B7E193F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC2456E1605FD79E7C4B520 /* OneSignalFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A4D45905684BD40D53A6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C25C44B845A804078C60F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2459633578009F3E492FB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E719006DA1F5BB854A271E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8DEB5B59E799A9760C260C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		043755FD70D1BC6911EA5114 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53F85E2D092373A8A32EB350 /* PilloWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E255D7FF678B9C1DF0685F7A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0347E58E01A57DF12F5007CF /* Pillo Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8D0298E32902EEB3BFFC68 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C6C1369CF461668DA9FDD609 /* PilloWatchComplications.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				71F426B9A4641BD87BFBC779 /* MainTabView.swift */,
+				F27B8C4D96483C7FA659B194 /* PilloApp.swift */,
+				6A01F56928DFCE630027E76A /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		46AC1FB7C65752D386C5CEDA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9947D9D2993385A3B1A0F075 /* AppConfiguration.swift */,
+				0F4FA3274461F003F263513D /* AppEnvironment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C8AE16C6559C217996DDF7A0 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				282C1485468F45B4F6078051 /* Card.swift */,
+				29312E6D6E437C4D1718A2FA /* CrazyBeeLabsFooterView.swift */,
+				DD62E5ADD0FF953DB4BFC3D2 /* DiscreetModeEnvironment.swift */,
+				67E059B220F63E605B8CE32F /* PilloWordmark.swift */,
+				F7A7EBEA05A50BB2740CA3F2 /* PrimaryButton.swift */,
+				0F439229049A6DEBC20A5287 /* ProgressRing.swift */,
+				2F42899695B5AE6B5F069BBF /* StatTile.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		2000957DC03A95C32A802CDA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				22FFD3C21306BED536A83EA9 /* AppLanguage.swift */,
+				5A6425EE3746E22689C0E15B /* LanguageResolver.swift */,
+				2A58779428C78D83799E0D4D /* LocalizationService.swift */,
+				F9EDCBE692479FC034D9073C /* LocalizationServicing.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		0AB892C4FEFAB78715D28742 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E5062D6742BD2CD3B30F61DC /* DeepLinkRouterServicing.swift */,
+				653B91A7061AC855CB1C541B /* Route.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		178DF6F4F97945E016B459B0 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9F4DB1161FF6546381DEA146 /* BackgroundRefreshTask.swift */,
+				EE6F73AC4EF99807F619CA56 /* LocalNotificationService.swift */,
+				540324FC6F523D0E40B49D5B /* NotificationCategoryRegistrar.swift */,
+				0330AF2CCAE23CC8B87EC45B /* NotificationDelegate.swift */,
+				65324DFA460137E68A8D9F31 /* ReminderCounterStore.swift */,
+				2E3B1953E92FE8591CEC59F7 /* TimeZoneChangeSheet.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E9305FC3F4C469DBC9CD22ED /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CF5CBBFEE70E32736EBC046F /* PersistenceController+Preview.swift */,
+				02E1CEC46FC392AF7BADD84C /* ServiceContainer.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		391D399A901B3B891482520A /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F3D189A850422C8AF84E6546 /* AppLockServicing.swift */,
+				DF2B349B8EB30D938188F63C /* BiometricLockService.swift */,
+				F615EBC13B8F9DF2C42F5B0A /* BiometricLockServicing.swift */,
+				6F8E9AF91200065FCF099D04 /* KeychainStore.swift */,
+				ECB6BB14EF49F1DDF2E9DB54 /* LockGateView.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		CE9415A00DB05469AE46EDB9 /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				9AA5B5A6D0EEC8B643E8E6F4 /* OneSignalService.swift */,
+				1F057C7DDA0B7532274F66F8 /* OneSignalServicing.swift */,
+			);
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		1E39133965AFA6B29F5894C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE9415A00DB05469AE46EDB9 /* OneSignal */,
+				A7DD2E5FC90898451DF14351 /* AdaptiveReminderCalculator.swift */,
+				2B9A4815DC88B6D245C07FCA /* BlisterPackScanner.swift */,
+				345ECAFB3DEAF456451AE877 /* DataExportServicing.swift */,
+				7B12F11351E6F9B415DC942F /* FallbackRuleEngine.swift */,
+				780F8CB34DA7EAF4F21E6C29 /* HistoryExportServicing.swift */,
+				17FEF1F6A2278D3EF3FD68F9 /* MandatoryUpdateView.swift */,
+				FDF4D739C764720F9C4ABD2E /* PillScheduleCalculator.swift */,
+				37ACE2EAAACA319A8E37B876 /* PillScheduleService.swift */,
+				7FFB37D3AE9C7A05FD35E7E8 /* PillScheduleServicing.swift */,
+				5C684FE78BFA8AB7FD1DC14D /* RuleEngineServicing.swift */,
+				FA1A4E949786BA71FFE34812 /* SemanticVersion.swift */,
+				BD7682E56B51C380BB129446 /* StockServicing.swift */,
+				35665E60046314FCF0F035E5 /* URLValidator.swift */,
+				8DEC7B9770EAFC2922F27A1D /* UpdateAvailabilityService.swift */,
+				5E428A1C860A55A9CF9C6226 /* UpdateAvailabilityServicing.swift */,
+				9BD07F677EF345A9D3C79342 /* WatchConnectivityService.swift */,
+				C9A856634E0AD8E9727EC8BA /* WidgetBridge.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35D315DEBBF45F223B169A61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				46AC1FB7C65752D386C5CEDA /* Configuration */,
+				C8AE16C6559C217996DDF7A0 /* DesignSystem */,
+				2000957DC03A95C32A802CDA /* Localization */,
+				0AB892C4FEFAB78715D28742 /* Navigation */,
+				178DF6F4F97945E016B459B0 /* Notifications */,
+				E9305FC3F4C469DBC9CD22ED /* Persistence */,
+				391D399A901B3B891482520A /* Security */,
+				1E39133965AFA6B29F5894C9 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0C111BC8889F92DA8F581E8C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				05663E33E3217D1CF547259A /* AccountRowLink.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		8666D2A79EF766A0301A79BB /* BlisterPack */ = {
+			isa = PBXGroup;
+			children = (
+				164AE23690109B6DE28EA7EC /* BlisterGridView.swift */,
+				72BFCD92683921C9EE281E27 /* BlisterLegendView.swift */,
+				4A87B8602CD9784A95E00930 /* BlisterPackView.swift */,
+				B9004B8D92919DC8F335A1D0 /* BlisterPackViewModel.swift */,
+				6DD0367DFB3A6B3BA467F87B /* CorrectPastDoseSheet.swift */,
+			);
+			path = BlisterPack;
+			sourceTree = "<group>";
+		};
+		3983150E57A923BED0A5C09D /* Commitment */ = {
+			isa = PBXGroup;
+			children = (
+				3818D5E180F9175ED8CEEE8A /* CommitmentView.swift */,
+			);
+			path = Commitment;
+			sourceTree = "<group>";
+		};
+		2C6B23BCC3481F95570A5D96 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9E4F6C25C9A83F13926EA177 /* AddNoteSheet.swift */,
+				E3BD360F0D9685071BD259FB /* HistoryView.swift */,
+				BB9A564E83E6BD58951DFED4 /* HistoryViewModel.swift */,
+				0A33784AD7B059B7A0F01F03 /* MonthCalendarGridView.swift */,
+				8E7568F936A97DCDC9B46DCB /* RegularityBarChartView.swift */,
+				0EA96B84C80C4830F9EA736E /* SymptomChipsView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		50F986FC4EB6BC19D76D6B0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5EC4F2871F4C4A07BD575E5 /* BlisterMiniGridView.swift */,
+				DBD92106FEC7EF8B9AE107F2 /* HomeStatTilesView.swift */,
+				6FD9045EF708D43EB57ED36E /* HomeView.swift */,
+				39FEE6FDF2829878B33A2FDA /* HomeViewModel.swift */,
+				838967C54770DF993CD0E7A1 /* NextBreakBanner.swift */,
+				E65E1C1203F77C87F2E179BD /* TodayDoseCard.swift */,
+				80B8DF5AF3FDB3B34C3E5B73 /* WeekStripView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F06C59A62ED59B84AE4E970E /* MissedPill */ = {
+			isa = PBXGroup;
+			children = (
+				58DFDAD2A3A7DC8B5238C375 /* BlisterWeekSelectorView.swift */,
+				7418D684284B645D25A74A06 /* ContactProfessionalButton.swift */,
+				39C1BB0A0A270F82210610EE /* DelayButtonsView.swift */,
+				0A631ED1D644A9559B4915C4 /* FallbackGuidanceCard.swift */,
+				BE143E5BA9B54687DF6B333E /* MissedPillView.swift */,
+				5658E5A47CACD6B897022DA2 /* MissedPillViewModel.swift */,
+				BAF02E087B498CC114FE0BCF /* PillCountStepperView.swift */,
+			);
+			path = MissedPill;
+			sourceTree = "<group>";
+		};
+		4C18CBDF6886F031DD98218C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E470D028B826CC6F0F64B201 /* BlisterScanSheet.swift */,
+				A32826D7F29C4E7F8DC788A4 /* OnboardingIntroStep.swift */,
+				77DE01A86444ADFD151A946C /* OnboardingNotificationsStep.swift */,
+				01714FEFB5D507ABDF893ED5 /* OnboardingPillSetupStep.swift */,
+				BDF4E7F1362A471F526267CB /* OnboardingPrivacyStep.swift */,
+				7975660CA6839AEB438A1334 /* OnboardingView.swift */,
+				42B15D4DDF45A5C58133D713 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C8B63F0F7548A20AF9F6FBBA /* ReviewRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FF765820477EC1FB9B366024 /* ReviewRequestServicing.swift */,
+			);
+			path = ReviewRequest;
+			sourceTree = "<group>";
+		};
+		2C3495591E10CB2A6AB17552 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BB21A391531952C3E9C0B92A /* ConfidentialiteSection.swift */,
+				646BA2B690C69B58779DBA6A /* CrazyBeeLabsSection.swift */,
+				4A3600F42FD26A6FB5B324F3 /* LangueSection.swift */,
+				D8C15F60F4DB2022012FB2E7 /* MaContraceptionSection.swift */,
+				69D58EF726D3281DE334676B /* NotificationsCrazyBeeLabsSection.swift */,
+				047CD31C2882A404FB9D57BE /* PINSetupSheet.swift */,
+				195792141530D6480A5528CD /* RappelsSection.swift */,
+				128876BA9CB203F0B32BD069 /* SettingsView.swift */,
+				E0869D48C2C54CC7EBC9D3F2 /* StockSection.swift */,
+				1D396FF2208DA3D06D5B7F4B /* TrustedContactSection.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6F5AE69C834EA0A66A41D612 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				30DD4C15CA5941425CB96A0D /* ConfirmTodayDoseIntent.swift */,
+				20794A59A1C0852BA8FCA2D8 /* PilloShortcuts.swift */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		49E89B7794325418206A2606 /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				DA9166FE0DD80250B0E86216 /* StockView.swift */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		950B3D653B55C5439059C574 /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				044EF21130E3FEAA64316ED2 /* SymptomsView.swift */,
+				53323E7E42D2895EEF2BF3E6 /* SymptomsViewModel.swift */,
+			);
+			path = Symptoms;
+			sourceTree = "<group>";
+		};
+		984D844B917CCD4C29DE2A97 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0C111BC8889F92DA8F581E8C /* Account */,
+				8666D2A79EF766A0301A79BB /* BlisterPack */,
+				3983150E57A923BED0A5C09D /* Commitment */,
+				2C6B23BCC3481F95570A5D96 /* History */,
+				50F986FC4EB6BC19D76D6B0A /* Home */,
+				F06C59A62ED59B84AE4E970E /* MissedPill */,
+				4C18CBDF6886F031DD98218C /* Onboarding */,
+				C8B63F0F7548A20AF9F6FBBA /* ReviewRequest */,
+				2C3495591E10CB2A6AB17552 /* Settings */,
+				6F5AE69C834EA0A66A41D612 /* Siri */,
+				49E89B7794325418206A2606 /* Stock */,
+				950B3D653B55C5439059C574 /* Symptoms */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DA433CDB1A6B04DDD137C585 /* CrossPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				850A09DF4B4CF3C5541D7963 /* AppGroup.swift */,
+				6094CF2FBD66204B3F969B1A /* WidgetSnapshot.swift */,
+				B4C77D5CE4BF5FE792052B66 /* WidgetSnapshotStore.swift */,
+			);
+			path = CrossPlatform;
+			sourceTree = "<group>";
+		};
+		1975D6C1E5F36358AE07E98A /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A4EB4A0E4EB50C2FA340E0F5 /* BlisterCell.swift */,
+				76AC556E21F927EAB907B40B /* Palette.swift */,
+				70912DD31BCBD33CF1FA5073 /* Typography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AD3A955E2F0A10F0F167AA78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				224FF3E6198E97367C87330A /* CustomScheduleDay.swift */,
+				11A69AA88FDCAFB8212AA64F /* DoseEvent.swift */,
+				1DCC2A7F13A50E7FABFE6971 /* Enums.swift */,
+				621F63B2A5802FE97AC15D0C /* NotificationPreferences.swift */,
+				A01FB9EF9FB85655FFB9EE69 /* PillProfile.swift */,
+				3EBD6D843E483EA5768E9243 /* StockEntry.swift */,
+				75372B3483CC71D23037CD63 /* SymptomEntry.swift */,
+				50B80CBC73EDFD1F57F04980 /* UserPreferences.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4DDEACD2F834BFB85FC2A67 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9A848D6930D7CC34D6AF6FD7 /* PersistenceController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		91551BB70786ABCDB0CC68A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				17D7B22277677C53D9F8B71C /* DoseChangeNotifying.swift */,
+				763FAA5451C7BC37A0498339 /* DoseTrackingService.swift */,
+				BA4B3B02E251DA474B1AD30D /* DoseTrackingServicing.swift */,
+				913F1C96AE75C50FBD02E3E8 /* LocalNotificationServicing.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B46A6AFB1DC88CE23F6E63F1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DA433CDB1A6B04DDD137C585 /* CrossPlatform */,
+				1975D6C1E5F36358AE07E98A /* DesignSystem */,
+				AD3A955E2F0A10F0F167AA78 /* Models */,
+				D4DDEACD2F834BFB85FC2A67 /* Persistence */,
+				91551BB70786ABCDB0CC68A8 /* Services */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		74C0354F987B4FC0FDE2C044 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A449EFA9A779B259F1B5D /* AdaptiveReminderCalculatorTests.swift */,
+				BBF98F354F23AD3C564FF43A /* AppLockServiceTests.swift */,
+				2A4A431D09B619012312F542 /* BlisterPackScannerTests.swift */,
+				B5890BBA628495609A6D70AA /* DoseTrackingServiceTests.swift */,
+				51FB3342ACEE11AEDB111571 /* LanguageResolverTests.swift */,
+				FDDD9F11B31EEDEC3EAB4FEC /* PillScheduleServiceTests.swift */,
+				03522DDEEF6C8E98CC2FC943 /* ReviewRequestServiceTests.swift */,
+				FE48C3483CFC756A72EEE747 /* SemanticVersionTests.swift */,
+				4D6663556753E8EB1EEB0C9E /* StockServiceTests.swift */,
+				B10FC8CCA07328D8FD6BD996 /* URLValidatorTests.swift */,
+				9AD997FD66C06467646DE304 /* UpdateAvailabilityServiceTests.swift */,
+				D9B67F85421529F9B1109F1B /* WidgetBridgeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		055C91336A1BA92BA225F99B /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				79A76CB2C5CE519F6434F020 /* PilloUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		0D0E2E2E1C2752AF60B53F97 /* PilloWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				3B34FEC9224FE8B6DB2A5785 /* Info.plist */,
+				F78438670EDE9D035F9E6677 /* MarkDoseTakenIntent.swift */,
+				AE4A7FD640A63DDF913A995D /* NextDoseTimelineProvider.swift */,
+				521F55C1A2E1AA044E937668 /* PilloNextDoseWidget.swift */,
+				76F5245F11027EB89DCB6912 /* PilloWidgetEntryView.swift */,
+				317C6A50AC43C3FB4018E25B /* PilloWidgets.entitlements */,
+				C7D38F9E35E8F073B85C42D6 /* PilloWidgetsBundle.swift */,
+			);
+			path = PilloWidgets;
+			sourceTree = "<group>";
+		};
+		2B8B1DD1619578172512F0AF /* PilloWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				7AFC2CC2ABA57656C71FAD43 /* Assets.xcassets */,
+				31CF1F0F80B5783EF63272D3 /* Info.plist */,
+				B36F3FC8D26F964673554602 /* PilloWatchApp.entitlements */,
+				3276949D83996F8C638E812B /* PilloWatchApp.swift */,
+				593918873B37DF80308B6EB2 /* WatchHomeView.swift */,
+				A8730E7807EDDD80D538B690 /* WatchSessionReceiver.swift */,
+			);
+			path = PilloWatchApp;
+			sourceTree = "<group>";
+		};
+		8E7848CD226700CA7E51BE98 /* PilloWatchComplications */ = {
+			isa = PBXGroup;
+			children = (
+				5E54350E59AB86587A608286 /* ComplicationTimelineProvider.swift */,
+				1097B500F38278523005C5F1 /* Info.plist */,
+				43C5812E9623A4F38DA988CB /* PilloComplication.swift */,
+				3A00E90FEC2B214A3F57D073 /* PilloWatchComplications.entitlements */,
+				A74E12333C419496F54F50DE /* PilloWatchComplicationsBundle.swift */,
+			);
+			path = PilloWatchComplications;
+			sourceTree = "<group>";
+		};
+		4541A46D5097AB86EF55A621 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D7172619DB15AD08404D409 /* Assets.xcassets */,
+				4F3133CB82A42C2405ECFE76 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5B807729C9161D8C6C93C82 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				69723CF8402E36BAC8CDCD90 /* Base.xcconfig */,
+				6A5BEAA81BEC2CD3BA9D651B /* Debug.xcconfig */,
+				4800ACF5008F1F3FEC130B62 /* Staging.xcconfig */,
+				D6F9158E9B5A9C0C71EA5A96 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		72A79544FC4DD10045022645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996AD237BC284D463E664FFE /* Pillo.app */,
+				BD5FEB36355BB38F98691943 /* PilloTests.xctest */,
+				AE9198967288169819E0B4CF /* PilloUITests.xctest */,
+				0FD7488223EA0E20BD335592 /* PilloWidgetsExtension.appex */,
+				2F101836DB7F725A0A75EA85 /* Pillo Watch App.app */,
+				86AB1BB25043CC81743B8612 /* PilloWatchComplications.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71DC27D9F8E3B109C877BFC4 = {
+			isa = PBXGroup;
+			children = (
+				D1D0524B025E57AFFF263442 /* App */,
+				35D315DEBBF45F223B169A61 /* Core */,
+				984D844B917CCD4C29DE2A97 /* Features */,
+				B46A6AFB1DC88CE23F6E63F1 /* Shared */,
+				4541A46D5097AB86EF55A621 /* Resources */,
+				D5B807729C9161D8C6C93C82 /* Config */,
+				74C0354F987B4FC0FDE2C044 /* Tests */,
+				055C91336A1BA92BA225F99B /* UITests */,
+				0D0E2E2E1C2752AF60B53F97 /* PilloWidgets */,
+				2B8B1DD1619578172512F0AF /* PilloWatchApp */,
+				8E7848CD226700CA7E51BE98 /* PilloWatchComplications */,
+				72A79544FC4DD10045022645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F01C2E624E08A72BC055B46F /* Pillo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF0BFE4C820F767E4303FC /* Build configuration list for PBXNativeTarget "Pillo" */;
+			buildPhases = (
+				C197A1D4E0DE673615AC32CB /* Sources */,
+				4FCBC29864E7C7752B7E193F /* Frameworks */,
+				8A6A452CEE30B0908A47D41D /* Resources */,
+				043755FD70D1BC6911EA5114 /* Embed Foundation Extensions */,
+				E255D7FF678B9C1DF0685F7A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66FC03D90E8D27C6D69B37D /* PBXTargetDependency */,
+				69D18740B452ABA124474F19 /* PBXTargetDependency */,
+			);
+			name = Pillo;
+			packageProductDependencies = (
+				441CA140E443CD314CCCE1F6 /* OneSignalFramework */,
+			);
+			productName = Pillo;
+			productReference = 996AD237BC284D463E664FFE /* Pillo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C706FA839F4C1F2316B35783 /* PilloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E47EEC85B4E560F9CFE8E0B /* Build configuration list for PBXNativeTarget "PilloTests" */;
+			buildPhases = (
+				0D9FED2C54C8F345B7A1EB3B /* Sources */,
+				79A4D45905684BD40D53A6E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				247A6BBCA06A48AE23549A72 /* PBXTargetDependency */,
+			);
+			name = PilloTests;
+			productName = PilloTests;
+			productReference = BD5FEB36355BB38F98691943 /* PilloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A64ECAF98DFAF2BC218DB7D /* PilloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3FC849264C103FB920607D /* Build configuration list for PBXNativeTarget "PilloUITests" */;
+			buildPhases = (
+				E39ACA072C01855A3935210B /* Sources */,
+				1C25C44B845A804078C60F75 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64FE1E83ACE8FD07EEDD4408 /* PBXTargetDependency */,
+			);
+			name = PilloUITests;
+			productName = PilloUITests;
+			productReference = AE9198967288169819E0B4CF /* PilloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D627CACEBFAAA465612B83CD /* PilloWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D4D9E5546F0106138EA15F /* Build configuration list for PBXNativeTarget "PilloWidgetsExtension" */;
+			buildPhases = (
+				E2F56E4F641B0C97C58C11A5 /* Sources */,
+				F2459633578009F3E492FB24 /* Frameworks */,
+				8894B6517AEC09E6A28B351A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PilloWidgetsExtension";
+			productName = "PilloWidgetsExtension";
+			productReference = 0FD7488223EA0E20BD335592 /* PilloWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C4E3EC6DDB909CA82D780AE6 /* Pillo Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A95C311C2D90314FA1204D /* Build configuration list for PBXNativeTarget "Pillo Watch App" */;
+			buildPhases = (
+				7ADF4C5A75E8C58A3FC3EAC6 /* Sources */,
+				63E719006DA1F5BB854A271E /* Frameworks */,
+				A2F59F957738F954293EA051 /* Resources */,
+				4A8D0298E32902EEB3BFFC68 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905E2847C964EDA1F8550067 /* PBXTargetDependency */,
+			);
+			name = "Pillo Watch App";
+			productName = "Pillo Watch App";
+			productReference = 2F101836DB7F725A0A75EA85 /* Pillo Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F508125E6B4EC96BEC99F576 /* PilloWatchComplications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC7A99A3025CDB88607E69A /* Build configuration list for PBXNativeTarget "PilloWatchComplications" */;
+			buildPhases = (
+				9A4CB95A0E6BD7FAAD37A22F /* Sources */,
+				1E8DEB5B59E799A9760C260C /* Frameworks */,
+				D5292E41B9A3C30A08B12B68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PilloWatchComplications";
+			productName = "PilloWatchComplications";
+			productReference = 86AB1BB25043CC81743B8612 /* PilloWatchComplications.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F01C2E624E08A72BC055B46F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C706FA839F4C1F2316B35783 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F01C2E624E08A72BC055B46F;
+					};
+					3A64ECAF98DFAF2BC218DB7D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F01C2E624E08A72BC055B46F;
+					};
+					D627CACEBFAAA465612B83CD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C4E3EC6DDB909CA82D780AE6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F508125E6B4EC96BEC99F576 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 32D42B6A09FA42C6EFFC8E0F /* Build configuration list for PBXProject "Pillo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				en,
+				es,
+				de,
+				pt,
+				Base,
+			);
+			mainGroup = 71DC27D9F8E3B109C877BFC4;
+			packageReferences = (
+				0E8E104B07AD9D6F5559615B /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
+			productRefGroup = 72A79544FC4DD10045022645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F01C2E624E08A72BC055B46F /* Pillo */,
+				C706FA839F4C1F2316B35783 /* PilloTests */,
+				3A64ECAF98DFAF2BC218DB7D /* PilloUITests */,
+				D627CACEBFAAA465612B83CD /* PilloWidgetsExtension */,
+				C4E3EC6DDB909CA82D780AE6 /* Pillo Watch App */,
+				F508125E6B4EC96BEC99F576 /* PilloWatchComplications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXContainerItemProxy section */
+		920737C8D557D5379CE05229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01C2E624E08A72BC055B46F;
+			remoteInfo = Pillo;
+		};
+		43D59B57D278DB0F0D7DBEC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01C2E624E08A72BC055B46F;
+			remoteInfo = Pillo;
+		};
+		BC6137B680EE998CED07CAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D627CACEBFAAA465612B83CD;
+			remoteInfo = "PilloWidgetsExtension";
+		};
+		3DCCA81F8C569A1C3A00EAC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E3EC6DDB909CA82D780AE6;
+			remoteInfo = "Pillo Watch App";
+		};
+		C40B0D13879686679C78FEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F508125E6B4EC96BEC99F576;
+			remoteInfo = "PilloWatchComplications";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		247A6BBCA06A48AE23549A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01C2E624E08A72BC055B46F /* Pillo */;
+			targetProxy = 920737C8D557D5379CE05229 /* PBXContainerItemProxy */;
+		};
+		64FE1E83ACE8FD07EEDD4408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01C2E624E08A72BC055B46F /* Pillo */;
+			targetProxy = 43D59B57D278DB0F0D7DBEC9 /* PBXContainerItemProxy */;
+		};
+		C66FC03D90E8D27C6D69B37D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D627CACEBFAAA465612B83CD /* PilloWidgetsExtension */;
+			targetProxy = BC6137B680EE998CED07CAC9 /* PBXContainerItemProxy */;
+		};
+		69D18740B452ABA124474F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E3EC6DDB909CA82D780AE6 /* Pillo Watch App */;
+			targetProxy = 3DCCA81F8C569A1C3A00EAC7 /* PBXContainerItemProxy */;
+		};
+		905E2847C964EDA1F8550067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F508125E6B4EC96BEC99F576 /* PilloWatchComplications */;
+			targetProxy = C40B0D13879686679C78FEB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E8E104B07AD9D6F5559615B /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = exactVersion;
+				version = 5.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		441CA140E443CD314CCCE1F6 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E8E104B07AD9D6F5559615B /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A6A452CEE30B0908A47D41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD9C133694F74FB87B20B01 /* Assets.xcassets in Resources */,
+				D882B008C8E1D607AFA93F38 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B6517AEC09E6A28B351A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B527C71D042567659B47598 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F59F957738F954293EA051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B929EB850C4FA632BDA579FB /* Localizable.xcstrings in Resources */,
+				8C103DF2468E6F38B24E4F15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5292E41B9A3C30A08B12B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				129BC36668CC56E21B53DE29 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C197A1D4E0DE673615AC32CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653ABD036BCC19A5F090068E /* MainTabView.swift in Sources */,
+				5EAE50F01561CA16B4BA9C17 /* PilloApp.swift in Sources */,
+				89747BD45088447E6FD467BE /* RootView.swift in Sources */,
+				C29C416E76242F2BCF81A5EA /* AppConfiguration.swift in Sources */,
+				AAFFF7FC77FA257C60404DD0 /* AppEnvironment.swift in Sources */,
+				8E540070D650A1B2D8A2C0FE /* Card.swift in Sources */,
+				1FE2B48D487A56A4610BF5F7 /* CrazyBeeLabsFooterView.swift in Sources */,
+				94E49947795144FEE28DA353 /* DiscreetModeEnvironment.swift in Sources */,
+				D1F69BEC9843E2BA5D06B702 /* PilloWordmark.swift in Sources */,
+				9B96D9791D11241E52CA517E /* PrimaryButton.swift in Sources */,
+				2CC5054DC754575A1F4956ED /* ProgressRing.swift in Sources */,
+				9D05CA8A45C909C834AB52C5 /* StatTile.swift in Sources */,
+				6A6D00F8BBCDEFF5273AA7F5 /* AppLanguage.swift in Sources */,
+				6C07FB9F5362170E7C3C4EE2 /* LanguageResolver.swift in Sources */,
+				5746F1CD8149E292DCF88676 /* LocalizationService.swift in Sources */,
+				F2C4D7414EF0CF92C5CDDE08 /* LocalizationServicing.swift in Sources */,
+				C0D289758E3E5581E7EDE56D /* DeepLinkRouterServicing.swift in Sources */,
+				7857CA1B05D5BC047D8697C9 /* Route.swift in Sources */,
+				9BBFBAC83CBD29FAF971AFB1 /* BackgroundRefreshTask.swift in Sources */,
+				8F16E520364C20BE2422D864 /* LocalNotificationService.swift in Sources */,
+				EF82CC02A37EADA9BCAF854A /* NotificationCategoryRegistrar.swift in Sources */,
+				6DD8B55CCF976A3058897637 /* NotificationDelegate.swift in Sources */,
+				F2A409ABA7079ABA4CD1E3D0 /* ReminderCounterStore.swift in Sources */,
+				36FF3BE44FCE803B86FE29C9 /* TimeZoneChangeSheet.swift in Sources */,
+				7A76B14F17E97EF0D806413B /* PersistenceController+Preview.swift in Sources */,
+				B57F2BCD1484EC2F1A3A97F3 /* ServiceContainer.swift in Sources */,
+				82F74D0AFABDE957DECCDD5F /* AppLockServicing.swift in Sources */,
+				2548BF5C51D41DCE83E9B026 /* BiometricLockService.swift in Sources */,
+				B18457AB19F1FD2FDF38DEAC /* BiometricLockServicing.swift in Sources */,
+				56008B284E5B8F3CAEBAE07D /* KeychainStore.swift in Sources */,
+				1BA00421517A96A623743DE1 /* LockGateView.swift in Sources */,
+				1D40A11CA6FF8AC1502D154F /* AdaptiveReminderCalculator.swift in Sources */,
+				B4C9BB1F2F08079512069E94 /* BlisterPackScanner.swift in Sources */,
+				4A33F5AFA7D71AFAA46CE3DE /* DataExportServicing.swift in Sources */,
+				E55E7F8F6C8C48CBB906876E /* FallbackRuleEngine.swift in Sources */,
+				35FD2C68C6978BE916FFDDDB /* HistoryExportServicing.swift in Sources */,
+				F1B7E0A90946A4B6EA869C01 /* MandatoryUpdateView.swift in Sources */,
+				BEC24F40F4B8B7042D93126C /* PillScheduleCalculator.swift in Sources */,
+				2E8D3C79CDFC7B4C51ED24D3 /* PillScheduleService.swift in Sources */,
+				C039FDB378EA08DEB74CA3E6 /* PillScheduleServicing.swift in Sources */,
+				5FE01626C39D7C8BC61F3A0F /* RuleEngineServicing.swift in Sources */,
+				891F133BA52083571056CD17 /* SemanticVersion.swift in Sources */,
+				602192F4500A3BF33E5FC5E8 /* StockServicing.swift in Sources */,
+				2648C68196599DD44C9A20C9 /* URLValidator.swift in Sources */,
+				6A25FBB68354C95F5E389574 /* UpdateAvailabilityService.swift in Sources */,
+				AB609ABF544B178684B59BB3 /* UpdateAvailabilityServicing.swift in Sources */,
+				9C47C2B250FFD8F347A05611 /* WatchConnectivityService.swift in Sources */,
+				052E0282E41A58B53ADB124D /* WidgetBridge.swift in Sources */,
+				FD9CCD887EFB63C4B93AA759 /* OneSignalService.swift in Sources */,
+				229CA728424C8B4B47953BA6 /* OneSignalServicing.swift in Sources */,
+				23EF2F94488E4F12BF79D01B /* AccountRowLink.swift in Sources */,
+				BC1CC27798ECA309DE848B7A /* BlisterGridView.swift in Sources */,
+				CD7B51C7D7659679C4949607 /* BlisterLegendView.swift in Sources */,
+				EA0C24DA66D6C5D5383BD304 /* BlisterPackView.swift in Sources */,
+				578FE8B2031D4A7D559EDD94 /* BlisterPackViewModel.swift in Sources */,
+				F114DB76EFBECB72425BE111 /* CorrectPastDoseSheet.swift in Sources */,
+				9E05F719E1498EA4229D111D /* CommitmentView.swift in Sources */,
+				DDD5EFF9849F7734F2CA0BE5 /* AddNoteSheet.swift in Sources */,
+				01EFC5512B1BCFA0497F063D /* HistoryView.swift in Sources */,
+				5FB7225E7F0E575E4A62B36A /* HistoryViewModel.swift in Sources */,
+				078B1D0875F5640840C1F053 /* MonthCalendarGridView.swift in Sources */,
+				A03DCCE9E762D92DD00B442E /* RegularityBarChartView.swift in Sources */,
+				38AD6458875B2EC8E9E30449 /* SymptomChipsView.swift in Sources */,
+				70A8CE3F5A58B338ADFD9D40 /* BlisterMiniGridView.swift in Sources */,
+				AD685885C895C95C784AC2F0 /* HomeStatTilesView.swift in Sources */,
+				B1A859552A1AEF6EB68ED4D0 /* HomeView.swift in Sources */,
+				7CD1BF205D66330DC043F647 /* HomeViewModel.swift in Sources */,
+				AFEF31D7C92D08C2D4942A26 /* NextBreakBanner.swift in Sources */,
+				1AF8B8F0B831B7EE0525934C /* TodayDoseCard.swift in Sources */,
+				70D8E8421D773DF3B65155C3 /* WeekStripView.swift in Sources */,
+				DCB3307DD4DCDEB15BB629F2 /* BlisterWeekSelectorView.swift in Sources */,
+				922A7483D21004572A6337D4 /* ContactProfessionalButton.swift in Sources */,
+				14C58BE9B082B94F5F99D60F /* DelayButtonsView.swift in Sources */,
+				01350D7FD957F135E388785F /* FallbackGuidanceCard.swift in Sources */,
+				7D942949F724B5678F7C5A93 /* MissedPillView.swift in Sources */,
+				C398480F7BA475C064BB95F5 /* MissedPillViewModel.swift in Sources */,
+				69C9F48F239F4DDC9B68A4A3 /* PillCountStepperView.swift in Sources */,
+				6A1CF8FB7B829D21E6B3F08F /* BlisterScanSheet.swift in Sources */,
+				94DD6C5DA8E9E4E0945441BC /* OnboardingIntroStep.swift in Sources */,
+				F416D1AB0476F30483B6CF1B /* OnboardingNotificationsStep.swift in Sources */,
+				96080794DEC17B48FC3E565C /* OnboardingPillSetupStep.swift in Sources */,
+				FABD70B9C67F630F70FAA5D8 /* OnboardingPrivacyStep.swift in Sources */,
+				AC3227FDB35557399BAC179B /* OnboardingView.swift in Sources */,
+				4B6388D73511D7581AEBCD03 /* OnboardingViewModel.swift in Sources */,
+				00F2F2A991A267F07F325DA5 /* ReviewRequestServicing.swift in Sources */,
+				51D8AC1DCCA273384E3381FE /* ConfidentialiteSection.swift in Sources */,
+				F8EC8B3C046BAE81F305E0D8 /* CrazyBeeLabsSection.swift in Sources */,
+				9AE1348C2306E0C9D8488A0C /* LangueSection.swift in Sources */,
+				C0C1E9E313E301EF64943EAD /* MaContraceptionSection.swift in Sources */,
+				85A2A105D4AFCA71F7EBF3CD /* NotificationsCrazyBeeLabsSection.swift in Sources */,
+				8C2E640561005E97A147B68D /* PINSetupSheet.swift in Sources */,
+				1239095B77F997652564D2EE /* RappelsSection.swift in Sources */,
+				1E5E0DE4CAC29DF40EEDD361 /* SettingsView.swift in Sources */,
+				FF2AD7D138440E875DB4477F /* StockSection.swift in Sources */,
+				46FCE917AFD70907C60B4AA3 /* TrustedContactSection.swift in Sources */,
+				87496E5C8205DF96C004DB63 /* ConfirmTodayDoseIntent.swift in Sources */,
+				0C3984FEFC290EA536F681B8 /* PilloShortcuts.swift in Sources */,
+				AD1E2F4B4150C2C849FC8D29 /* StockView.swift in Sources */,
+				E0B9DE08E0E06115CEFF9C27 /* SymptomsView.swift in Sources */,
+				3BB98B05B63DE2D9BECAAE49 /* SymptomsViewModel.swift in Sources */,
+				77C4AA7DE99E50E411017988 /* AppGroup.swift in Sources */,
+				2F58D034C6C9F4960A2BCBF1 /* WidgetSnapshot.swift in Sources */,
+				407DDE36188DA288EB7B08E6 /* WidgetSnapshotStore.swift in Sources */,
+				111B927E1E48F9D2359B3815 /* BlisterCell.swift in Sources */,
+				2861EA5BB77F3F0157DA6325 /* Palette.swift in Sources */,
+				94ACFD5C24495023ED096911 /* Typography.swift in Sources */,
+				B7FF194C480BB97409F68F2F /* CustomScheduleDay.swift in Sources */,
+				4B632222135FCD12C801AB85 /* DoseEvent.swift in Sources */,
+				16E681C44A4657469892BEC1 /* Enums.swift in Sources */,
+				C6DDDD890657125F0AFAC706 /* NotificationPreferences.swift in Sources */,
+				B6C4B810645E041B7227BEE4 /* PillProfile.swift in Sources */,
+				F5E022A7CEEFB7DC70471FAE /* StockEntry.swift in Sources */,
+				338CF087C215DA70EBDDF138 /* SymptomEntry.swift in Sources */,
+				DC1FD71B166032CB3FA3AF6B /* UserPreferences.swift in Sources */,
+				DA683D5B383BB0A52E6CF39C /* PersistenceController.swift in Sources */,
+				E89DA4C5AF0A82D585F626EE /* DoseChangeNotifying.swift in Sources */,
+				5473F7089FA885821DC0D4EA /* DoseTrackingService.swift in Sources */,
+				5DF850AA8244E322B6B74E54 /* DoseTrackingServicing.swift in Sources */,
+				A999FE08C1E3C6CF9812FA46 /* LocalNotificationServicing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D9FED2C54C8F345B7A1EB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89AFDB2C9110CC4489E3291 /* AdaptiveReminderCalculatorTests.swift in Sources */,
+				82DC52415852544BC9235977 /* AppLockServiceTests.swift in Sources */,
+				649D1B7E932B91C7C21F2140 /* BlisterPackScannerTests.swift in Sources */,
+				7B7A3D05A97CD45B369EFF7E /* DoseTrackingServiceTests.swift in Sources */,
+				38252A8A954DBD2C0DE873DE /* LanguageResolverTests.swift in Sources */,
+				95B862B0AC6A977C93C22F84 /* PillScheduleServiceTests.swift in Sources */,
+				715D584CB473D64D518610AC /* ReviewRequestServiceTests.swift in Sources */,
+				3368A9C5F9BE9F50BF271D9A /* SemanticVersionTests.swift in Sources */,
+				0546461700FE4A0ABAEAFB29 /* StockServiceTests.swift in Sources */,
+				F805E4165A56DA989B84F3D2 /* URLValidatorTests.swift in Sources */,
+				11B881F564E1FED253FD022F /* UpdateAvailabilityServiceTests.swift in Sources */,
+				992ED78EF612839830AB094D /* WidgetBridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39ACA072C01855A3935210B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433CB0FBF3ADB12E70E90CA9 /* PilloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F56E4F641B0C97C58C11A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D571A636BFAAE669E400A41 /* MarkDoseTakenIntent.swift in Sources */,
+				50A3393FC8BD834D50F79005 /* NextDoseTimelineProvider.swift in Sources */,
+				5C58502C0B6B9B4209CD8068 /* PilloNextDoseWidget.swift in Sources */,
+				903ACCF78E41B56146D2495D /* PilloWidgetEntryView.swift in Sources */,
+				54034F125A8A2F5741EA84C3 /* PilloWidgetsBundle.swift in Sources */,
+				C637A243D22B35777C7A396D /* AppGroup.swift in Sources */,
+				5619E3111F3DC7A2A6B3D454 /* WidgetSnapshot.swift in Sources */,
+				7626E350ABE6E9ED220961C0 /* WidgetSnapshotStore.swift in Sources */,
+				93722E98DC955263B6345353 /* BlisterCell.swift in Sources */,
+				A0FF03431D7F4307410888BE /* Palette.swift in Sources */,
+				E57850EB438E9A7C66D81E49 /* Typography.swift in Sources */,
+				72A3D2F227DFF52A8919F5EF /* CustomScheduleDay.swift in Sources */,
+				A7469882391FFDC91F44EE8E /* DoseEvent.swift in Sources */,
+				F6662D12AB646EFDC0A66242 /* Enums.swift in Sources */,
+				18C82D6E7DD55B5BAA7463C9 /* NotificationPreferences.swift in Sources */,
+				07EC7CA3549551AA6A9A2963 /* PillProfile.swift in Sources */,
+				1A2FE38B2FB69E3E2B1BC83F /* StockEntry.swift in Sources */,
+				C217CF570049779108FEE3A2 /* SymptomEntry.swift in Sources */,
+				112FA98A7BE2C7570CB303DA /* UserPreferences.swift in Sources */,
+				99A9B685E2F6720D83BEB2EE /* PersistenceController.swift in Sources */,
+				0B827E8500D7532BF8A11C94 /* DoseChangeNotifying.swift in Sources */,
+				8D0C3E47468EEB88BBC6F119 /* DoseTrackingService.swift in Sources */,
+				2586E8EBE0C02E2BC7F5A84E /* DoseTrackingServicing.swift in Sources */,
+				623CA13FDC78482974F82BEE /* LocalNotificationServicing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ADF4C5A75E8C58A3FC3EAC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7581E92550D4EBEA08930B80 /* PilloWatchApp.swift in Sources */,
+				04370C437E394A34A6172AC4 /* WatchHomeView.swift in Sources */,
+				A7884AC1545993FE998F46B5 /* WatchSessionReceiver.swift in Sources */,
+				A7BE4522CA63B40FEBB78C96 /* AppGroup.swift in Sources */,
+				02F3D0966816F40D2C97A5E2 /* WidgetSnapshot.swift in Sources */,
+				E5ED6683C6369F3C77F77E4B /* WidgetSnapshotStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4CB95A0E6BD7FAAD37A22F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BFC1F54E732C8C2EE76597 /* ComplicationTimelineProvider.swift in Sources */,
+				6BA1F77D1881D3E31CF24DD3 /* PilloComplication.swift in Sources */,
+				5E6EDFD1D07C6010DA186759 /* PilloWatchComplicationsBundle.swift in Sources */,
+				126D640DC61ECB5EC792E0B3 /* AppGroup.swift in Sources */,
+				E8A95880909981C2332403EE /* WidgetSnapshot.swift in Sources */,
+				C4841564D5A160C7271630B4 /* WidgetSnapshotStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF20ADA4BADCE0D874998719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A5BEAA81BEC2CD3BA9D651B /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70DB7E69BF55788F9A20C996 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4800ACF5008F1F3FEC130B62 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Staging;
+		};
+		D247EF59B93D2323D10271C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F9158E9B5A9C0C71EA5A96 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0734E3BF1D7D1FE519145A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "App/Pillo.entitlements";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4301E2C6CDEE40E14EC44A4 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "App/Pillo.entitlements";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		A44521F7D7D0FB5F7D3840DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "App/Pillo.entitlements";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD9E53A751D12837D49CD913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pillo.app/Pillo";
+			};
+			name = Debug;
+		};
+		05BDB959301A92E0CF544F57 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pillo.app/Pillo";
+			};
+			name = Staging;
+		};
+		89AB91E29179479D5B63A0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pillo.app/Pillo";
+			};
+			name = Release;
+		};
+		5D682867634DB5F9CBC6A64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pillo;
+			};
+			name = Debug;
+		};
+		DFF1E1E3EECCDA6B19AE132B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pillo;
+			};
+			name = Staging;
+		};
+		768ED6BC1035E3F4882E0565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pillo;
+			};
+			name = Release;
+		};
+		F0330D309D531DF40A196E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWidgets/PilloWidgets.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWidgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWidgetsExtension";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		045A18CC08D31DCE7C0C9A42 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWidgets/PilloWidgets.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWidgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWidgetsExtension";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Staging;
+		};
+		E0F31FB4E6DB1B232AA9B8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWidgets/PilloWidgets.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWidgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWidgetsExtension";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		FDB612FC0DC3DECB20719B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchApp/PilloWatchApp.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pillo Watch App";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98090F4EF63B64A2015E14C1 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchApp/PilloWatchApp.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pillo Watch App";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SKIP_INSTALL = YES;
+			};
+			name = Staging;
+		};
+		7A8E68FB27C803AB7F9F1EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchApp/PilloWatchApp.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pillo Watch App";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8BE08811E8FD2593D6833998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchComplications/PilloWatchComplications.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchComplications/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWatchComplications";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp.complications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7873F4D36F72AD9347E95764 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchComplications/PilloWatchComplications.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchComplications/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWatchComplications";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp.complications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Staging;
+		};
+		667B5846EF932B6F8AD3D27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PilloWatchComplications/PilloWatchComplications.entitlements";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "PilloWatchComplications/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PilloWatchComplications";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER).watchkitapp.complications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "4";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32D42B6A09FA42C6EFFC8E0F /* Build configuration list for PBXProject "Pillo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF20ADA4BADCE0D874998719 /* Debug */,
+				70DB7E69BF55788F9A20C996 /* Staging */,
+				D247EF59B93D2323D10271C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF0BFE4C820F767E4303FC /* Build configuration list for PBXNativeTarget "Pillo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0734E3BF1D7D1FE519145A53 /* Debug */,
+				E4301E2C6CDEE40E14EC44A4 /* Staging */,
+				A44521F7D7D0FB5F7D3840DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E47EEC85B4E560F9CFE8E0B /* Build configuration list for PBXNativeTarget "PilloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9E53A751D12837D49CD913 /* Debug */,
+				05BDB959301A92E0CF544F57 /* Staging */,
+				89AB91E29179479D5B63A0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3FC849264C103FB920607D /* Build configuration list for PBXNativeTarget "PilloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D682867634DB5F9CBC6A64B /* Debug */,
+				DFF1E1E3EECCDA6B19AE132B /* Staging */,
+				768ED6BC1035E3F4882E0565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D4D9E5546F0106138EA15F /* Build configuration list for PBXNativeTarget "PilloWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0330D309D531DF40A196E5F /* Debug */,
+				045A18CC08D31DCE7C0C9A42 /* Staging */,
+				E0F31FB4E6DB1B232AA9B8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A95C311C2D90314FA1204D /* Build configuration list for PBXNativeTarget "Pillo Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB612FC0DC3DECB20719B39 /* Debug */,
+				98090F4EF63B64A2015E14C1 /* Staging */,
+				7A8E68FB27C803AB7F9F1EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC7A99A3025CDB88607E69A /* Build configuration list for PBXNativeTarget "PilloWatchComplications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE08811E8FD2593D6833998 /* Debug */,
+				7873F4D36F72AD9347E95764 /* Staging */,
+				667B5846EF932B6F8AD3D27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
