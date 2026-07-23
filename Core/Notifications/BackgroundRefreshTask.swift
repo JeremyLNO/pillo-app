@@ -1,4 +1,4 @@
-import BackgroundTasks
+@preconcurrency import BackgroundTasks
 import SwiftData
 
 /// Architecture-only in Phase 1: registers a `BGAppRefreshTask` so the notification
