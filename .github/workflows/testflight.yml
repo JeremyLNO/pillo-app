@@ -71,17 +71,25 @@ jobs:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
         run: |
-          xcodebuild archive \
-            -project Pillo.xcodeproj \
-            -scheme Pillo \
-            -configuration Release \
-            -archivePath build/Pillo.xcarchive \
-            -destination 'generic/platform=iOS' \
-            -allowProvisioningUpdates \
-            CURRENT_PROJECT_VERSION=${{ github.run_number }} \
-            -authenticationKeyPath "$HOME/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
-            -authenticationKeyID "$ASC_KEY_ID" \
-            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+          archive() {
+            xcodebuild archive \
+              -project Pillo.xcodeproj \
+              -scheme Pillo \
+              -configuration Release \
+              -archivePath build/Pillo.xcarchive \
+              -destination 'generic/platform=iOS' \
+              -allowProvisioningUpdates \
+              CURRENT_PROJECT_VERSION=${{ github.run_number }} \
+              -authenticationKeyPath "$HOME/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
+              -authenticationKeyID "$ASC_KEY_ID" \
+              -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+          }
+          # First run downloads/creates any missing provisioning profiles (esp.
+          # for the watch targets) — occasionally the build plan is computed
+          # just before that download lands on disk, failing with "Build input
+          # file cannot be found: .../<uuid>.mobileprovision". A second attempt
+          # always finds the file already there and succeeds.
+          archive || { echo "Retrying archive (profile likely just landed)…"; archive; }
 
       - name: Export & upload to TestFlight
         env:
