@@ -4,7 +4,7 @@ Paste the relevant sections below into App Store Connect's "Notes for Review" fi
 
 ## No account required
 
-Pillo works fully without creating an account. All reminder data is stored locally on-device (SwiftData); nothing is required to sign up, sign in, or use any core feature. A "Créer un compte" row exists in Réglages ▸ CrazyBeeLabs — it opens `https://crazybeelabs.com/` in the system browser (or in-app web view) and is entirely optional; it does not gate any feature.
+Pillo tracker works fully without creating an account. All reminder data is stored locally on-device (SwiftData); nothing is required to sign up, sign in, or use any core feature. A "Créer un compte" row exists in Réglages ▸ CrazyBeeLabs — it opens `https://crazybeelabs.com/` in the system browser (or in-app web view) and is entirely optional; it does not gate any feature.
 
 ## Health data handling
 

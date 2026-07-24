@@ -76,7 +76,7 @@ final class HistoryExportService: HistoryExportServicing {
             }
 
             newPageIfNeeded(60)
-            NSString(string: "Pillo — \(profileName)").draw(at: CGPoint(x: margin, y: y), withAttributes: titleAttributes)
+            NSString(string: "Pillo tracker — \(profileName)").draw(at: CGPoint(x: margin, y: y), withAttributes: titleAttributes)
             y += 26
             NSString(string: "Exported \(dateFormatter.string(from: .now))").draw(at: CGPoint(x: margin, y: y), withAttributes: subtitleAttributes)
             y += 30
