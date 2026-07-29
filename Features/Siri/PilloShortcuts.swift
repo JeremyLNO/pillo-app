@@ -13,7 +13,7 @@ struct PilloShortcuts: AppShortcutsProvider {
                 "Confirme ma prise de pilule dans \(.applicationName)",
                 "Marque ma pilule comme prise dans \(.applicationName)",
             ],
-            shortTitle: "siri.confirmDose.shortTitle",
+            shortTitle: "intent.confirmDose.shortTitle",
             systemImageName: "checkmark.circle.fill"
         )
     }

@@ -7281,7 +7281,7 @@
         }
       }
     },
-    "siri.confirmDose.alreadyDoneOrNone": {
+    "intent.confirmDose.alreadyDoneOrNone": {
       "extractionState": "manual",
       "localizations": {
         "de": {
@@ -7316,7 +7316,7 @@
         }
       }
     },
-    "siri.confirmDose.description": {
+    "intent.confirmDose.description": {
       "extractionState": "manual",
       "localizations": {
         "de": {
@@ -7351,7 +7351,7 @@
         }
       }
     },
-    "siri.confirmDose.noProfile": {
+    "intent.confirmDose.noProfile": {
       "extractionState": "manual",
       "localizations": {
         "de": {
@@ -7386,7 +7386,7 @@
         }
       }
     },
-    "siri.confirmDose.shortTitle": {
+    "intent.confirmDose.shortTitle": {
       "extractionState": "manual",
       "localizations": {
         "de": {
@@ -7421,7 +7421,7 @@
         }
       }
     },
-    "siri.confirmDose.success": {
+    "intent.confirmDose.success": {
       "extractionState": "manual",
       "localizations": {
         "de": {
@@ -7456,7 +7456,7 @@
         }
       }
     },
-    "siri.confirmDose.title": {
+    "intent.confirmDose.title": {
       "extractionState": "manual",
       "localizations": {
         "de": {
