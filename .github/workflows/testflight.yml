@@ -5,8 +5,9 @@ name: TestFlight Release
 #   ASC_KEY_ID              — App Store Connect API Key ID
 #   ASC_ISSUER_ID           — App Store Connect API Issuer ID
 #   ASC_KEY_P8              — full contents of the AuthKey_<id>.p8 file
-#   IOS_DEV_CERT_P12        — base64 of an exported "Apple Development" OR
-#                             "Apple Distribution" .p12 (either signs the archive)
+#   IOS_DEV_CERT_P12        — base64 of an exported "Apple Development" .p12
+#                             (a Distribution certificate will NOT do: see the
+#                             certificate guard below)
 #   IOS_DEV_CERT_PASSWORD   — the password that .p12 was exported with
 # The API key comes from App Store Connect → Users and Access → Integrations
 # → App Store Connect API (NOT an APNs key — different key, same portal
@@ -72,16 +73,17 @@ jobs:
           # breaks archiving for every app on the account.
           security default-keychain -s "$KEYCHAIN_PATH"
           rm -f "$RUNNER_TEMP/cert.p12"
-          # Fail loudly rather than let the build "succeed" on a freshly
-          # created certificate. Either identity type is fine: automatic signing
-          # picks "Apple Development" or "Apple Distribution" depending on how it
-          # resolves the archive, and both keep it from minting a new cert. What
-          # must fail here is an empty or unusable keychain — matching only one of
-          # the two rejected a perfectly good Distribution cert (run 30464715936).
+          # Fail loudly rather than let the build "succeed" on a freshly created
+          # certificate. It has to be an "Apple Development" identity specifically:
+          # run 33740416097 proved that a Distribution-only keychain still archives
+          # green while xcodebuild quietly mints "Apple Development: Created via
+          # API" for itself — one slot of the account-wide certificate quota burned
+          # per run, until every app on the account stops archiving. Failing here
+          # costs 20s and mints nothing; the check after the archive is the backstop.
           security find-identity -v -p codesigning "$KEYCHAIN_PATH"
           security find-identity -v -p codesigning "$KEYCHAIN_PATH" \
-            | grep -qE "Apple (Development|Distribution)" || {
-            echo "::error::no usable Apple Development/Distribution identity in the imported keychain"
+            | grep -q "Apple Development" || {
+            echo "::error::IOS_DEV_CERT_P12 holds no \"Apple Development\" identity (a Distribution certificate alone is not enough — xcodebuild would mint a new development cert every run). Export one from Xcode ▸ Settings ▸ Accounts ▸ Manage Certificates and replace the secret."
             exit 1
           }
 
@@ -101,7 +103,8 @@ jobs:
               CURRENT_PROJECT_VERSION=${{ github.run_number }} \
               -authenticationKeyPath "$HOME/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
               -authenticationKeyID "$ASC_KEY_ID" \
-              -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+              -authenticationKeyIssuerID "$ASC_ISSUER_ID" 2>&1 | tee -a "$RUNNER_TEMP/archive.log"
+            return "${PIPESTATUS[0]}"
           }
           # First run downloads/creates any missing provisioning profiles (esp.
           # for the watch targets) — occasionally the build plan is computed
@@ -109,6 +112,16 @@ jobs:
           # file cannot be found: .../<uuid>.mobileprovision". A second attempt
           # always finds the file already there and succeeds.
           archive || { echo "Retrying archive (profile likely just landed)…"; archive; }
+
+          # Backstop for the keychain guard above: whatever the reason, if the
+          # archive was signed by a certificate xcodebuild created for itself
+          # rather than the imported one, say so instead of shipping and silently
+          # spending another slot of the account's certificate quota.
+          if grep -q "Created via API" "$RUNNER_TEMP/archive.log"; then
+            echo "::error::archive was signed with a certificate xcodebuild minted via the API, not the one imported from IOS_DEV_CERT_P12 — the account certificate quota is being consumed on every run. Put an Apple Development .p12 in that secret."
+            grep -m1 "Signing Identity" "$RUNNER_TEMP/archive.log" || true
+            exit 1
+          fi
 
       - name: Export & upload to TestFlight
         env:
