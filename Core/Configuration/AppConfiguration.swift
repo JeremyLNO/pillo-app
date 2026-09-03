@@ -31,9 +31,9 @@ struct AppConfiguration: Sendable {
 
         appName = string("APP_NAME", default: "Pillo Tracker")
         bundleIdentifier = bundle.bundleIdentifier ?? "company.lno.pillo"
-        appStoreID = string("APP_STORE_ID", default: "TODO_APP_STORE_ID")
-        appStoreURL = url("APP_STORE_URL", default: "https://apps.apple.com/app/idTODO_APP_STORE_ID")
-        appStoreReviewURL = url("APP_STORE_REVIEW_URL", default: "https://apps.apple.com/app/idTODO_APP_STORE_ID?action=write-review")
+        appStoreID = string("APP_STORE_ID", default: "6794005779")
+        appStoreURL = url("APP_STORE_URL", default: "https://apps.apple.com/app/id6794005779")
+        appStoreReviewURL = url("APP_STORE_REVIEW_URL", default: "https://apps.apple.com/app/id6794005779?action=write-review")
         oneSignalAppID = string("ONESIGNAL_APP_ID", default: "TODO_ONESIGNAL_APP_ID")
         crazyBeeWebsiteURL = url("CRAZYBEE_WEBSITE_URL", default: "https://crazybeelabs.com/")
         crazyBeeSupportURL = url("CRAZYBEE_SUPPORT_URL", default: "https://crazybeelabs.com/support/")

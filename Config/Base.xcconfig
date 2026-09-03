@@ -13,7 +13,7 @@ APP_NAME = Pillo Tracker
 BUNDLE_IDENTIFIER = company.lno.pillo
 
 // TODO: replace with the real App Store Connect numeric ID once the app is created there.
-APP_STORE_ID = 0000000000
+APP_STORE_ID = 6794005779
 APP_STORE_URL = https:$(SLASH)$(SLASH)apps.apple.com/app/id$(APP_STORE_ID)
 APP_STORE_REVIEW_URL = https:$(SLASH)$(SLASH)apps.apple.com/app/id$(APP_STORE_ID)?action=write-review
 
