@@ -29,8 +29,9 @@ CRAZYBEE_COMMITMENT_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/commitment
 // crazybeelabs.com/privacy/ et /terms/ renvoient 404 : les pages vivent sous /legal/.
 PRIVACY_POLICY_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/legal/apps
 TERMS_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/legal/apps
-// TODO: only needed once a remote update-check JSON is actually published (Phase 2+).
-REMOTE_CONFIG_URL =
+// JSON de vérification de mise à jour, servi en statique par le site (dépôt
+// CrazyBeeLabs-website, public/pillo-config.json). Vide = vérification désactivée.
+REMOTE_CONFIG_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/pillo-config.json
 
 DEVELOPMENT_TEAM = 2E6D4Q69QB
 CODE_SIGN_STYLE = Automatic
