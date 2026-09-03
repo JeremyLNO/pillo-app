@@ -5,16 +5,17 @@ name: TestFlight Release
 #   ASC_KEY_ID              — App Store Connect API Key ID
 #   ASC_ISSUER_ID           — App Store Connect API Issuer ID
 #   ASC_KEY_P8              — full contents of the AuthKey_<id>.p8 file
-#   IOS_DEV_CERT_P12        — base64 of an exported "Apple Development" .p12
+#   IOS_DEV_CERT_P12        — base64 of an exported "Apple Development" OR
+#                             "Apple Distribution" .p12 (either signs the archive)
 #   IOS_DEV_CERT_PASSWORD   — the password that .p12 was exported with
 # The API key comes from App Store Connect → Users and Access → Integrations
 # → App Store Connect API (NOT an APNs key — different key, same portal
-# family). xcodebuild archive with automatic signing always wants an "Apple
-# Development" identity for the archive step itself (distribution signing
-# happens later, during export/upload, driven by the API key) — so that's
-# the cert imported into a throwaway keychain every run, reused instead of
-# minting a brand new one each time (GitHub's runners are ephemeral; doing
-# that repeatedly silently exhausts the account's certificate quota).
+# family). xcodebuild archive with automatic signing needs a signing identity
+# on the runner for the archive step itself — that's the cert imported into a
+# throwaway keychain every run, reused instead of minting a brand new one each
+# time (GitHub's runners are ephemeral; doing that repeatedly silently exhausts
+# the account's certificate quota). The App Store submission itself is driven by
+# the API key, during export/upload.
 on:
   push:
     branches: [ main ]
@@ -72,10 +73,15 @@ jobs:
           security default-keychain -s "$KEYCHAIN_PATH"
           rm -f "$RUNNER_TEMP/cert.p12"
           # Fail loudly rather than let the build "succeed" on a freshly
-          # created certificate.
+          # created certificate. Either identity type is fine: automatic signing
+          # picks "Apple Development" or "Apple Distribution" depending on how it
+          # resolves the archive, and both keep it from minting a new cert. What
+          # must fail here is an empty or unusable keychain — matching only one of
+          # the two rejected a perfectly good Distribution cert (run 30464715936).
           security find-identity -v -p codesigning "$KEYCHAIN_PATH"
-          security find-identity -v -p codesigning "$KEYCHAIN_PATH" | grep -q "Apple Development" || {
-            echo "::error::imported certificate is not usable for code signing"
+          security find-identity -v -p codesigning "$KEYCHAIN_PATH" \
+            | grep -qE "Apple (Development|Distribution)" || {
+            echo "::error::no usable Apple Development/Distribution identity in the imported keychain"
             exit 1
           }
 
