@@ -29,7 +29,7 @@ struct AppConfiguration: Sendable {
             URL(string: string(key, default: fallback)) ?? URL(string: fallback)!
         }
 
-        appName = string("APP_NAME", default: "Pillo tracker")
+        appName = string("APP_NAME", default: "Pillo Tracker")
         bundleIdentifier = bundle.bundleIdentifier ?? "company.lno.pillo"
         appStoreID = string("APP_STORE_ID", default: "TODO_APP_STORE_ID")
         appStoreURL = url("APP_STORE_URL", default: "https://apps.apple.com/app/idTODO_APP_STORE_ID")

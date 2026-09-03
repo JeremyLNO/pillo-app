@@ -65,7 +65,7 @@ struct HomeView: View {
                 .padding(16)
             }
             .background(Palette.background)
-            .navigationTitle(discreetMode ? "" : "Pillo tracker")
+            .navigationTitle(discreetMode ? "" : "Pillo Tracker")
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     if !discreetMode {

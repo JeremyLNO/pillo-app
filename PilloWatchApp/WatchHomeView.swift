@@ -63,7 +63,7 @@ struct WatchHomeView: View {
             }
             .padding()
         }
-        .navigationTitle("Pillo tracker")
+        .navigationTitle("Pillo Tracker")
     }
 }
 

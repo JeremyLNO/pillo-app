@@ -66,9 +66,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Pillo tracker utilise l'appareil photo pour essayer de reconnaître automatiquement ta plaquette (facultatif).</string>
+	<string>Pillo Tracker utilise l'appareil photo pour essayer de reconnaître automatiquement ta plaquette (facultatif).</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Pillo tracker utilise Face ID pour protéger l'accès à vos données de contraception.</string>
+	<string>Pillo Tracker utilise Face ID pour protéger l'accès à vos données de contraception.</string>
 	<key>ONESIGNAL_APP_ID</key>
 	<string>$(ONESIGNAL_APP_ID)</string>
 	<key>PRIVACY_POLICY_URL</key>

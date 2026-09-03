@@ -6,7 +6,7 @@
 // setting reference) between the colon and the slashes so the two slashes are never
 // literally adjacent to the parser, while still resolving to the real URL at build time.
 
-APP_NAME = "Pillo tracker"
+APP_NAME = Pillo Tracker
 BUNDLE_IDENTIFIER = company.lno.pillo
 
 // TODO: replace with the real App Store Connect numeric ID once the app is created there.
