@@ -1,30 +1,34 @@
 // Shared across all environments. Environment-specific files (Debug/Staging/Release)
 // include this one and override only what differs (APP_ENVIRONMENT, REMOTE_CONFIG_URL).
 //
-// NOTE: xcconfig files treat "//" as a comment delimiter, which would silently truncate
-// any "https://..." value at the colon. Every URL below inserts "$()" (an empty build
-// setting reference) between the colon and the slashes so the two slashes are never
-// literally adjacent to the parser, while still resolving to the real URL at build time.
+// NOTE: xcconfig files treat "//" as a comment delimiter, which silently truncates any
+// "https://..." value at the colon. The widely-cited "$()" workaround does NOT work here
+// (Xcode 17): every URL still reached Info.plist as the bare string "https:" — and
+// URL(string: "https:") is non-nil, so nothing failed loudly. What does work is passing the
+// slashes through a build setting, since substitution happens after comments are stripped:
+// SLASH below, used as https:$(SLASH)$(SLASH)host/path. Verified in the built Info.plist.
 
+SLASH = /
 APP_NAME = Pillo Tracker
 BUNDLE_IDENTIFIER = company.lno.pillo
 
 // TODO: replace with the real App Store Connect numeric ID once the app is created there.
 APP_STORE_ID = 0000000000
-APP_STORE_URL = https:$()//apps.apple.com/app/id$(APP_STORE_ID)
-APP_STORE_REVIEW_URL = https:$()//apps.apple.com/app/id$(APP_STORE_ID)?action=write-review
+APP_STORE_URL = https:$(SLASH)$(SLASH)apps.apple.com/app/id$(APP_STORE_ID)
+APP_STORE_REVIEW_URL = https:$(SLASH)$(SLASH)apps.apple.com/app/id$(APP_STORE_ID)?action=write-review
 
 // TODO: replace with the real OneSignal App ID when push (Phase 2) is wired up.
 ONESIGNAL_APP_ID = TODO_ONESIGNAL_APP_ID
 
-CRAZYBEE_WEBSITE_URL = https:$()//crazybeelabs.com/
-CRAZYBEE_SUPPORT_URL = https:$()//crazybeelabs.com/support/
+CRAZYBEE_WEBSITE_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/
+CRAZYBEE_SUPPORT_URL = https:$(SLASH)$(SLASH)crazybeelabs.com/support/
 // No dedicated account-creation URL exists yet — falls back to the website root per spec section 19.
-CRAZYBEE_ACCOUNT_URL = https:$()//crazybeelabs.com/
-CRAZYBEE_COMMITMENT_URL = https:$()//www.crazybeelabs.com/commitment
-// TODO: publish real privacy policy / terms pages and update these.
-PRIVACY_POLICY_URL = https:$()//crazybeelabs.com/privacy/
-TERMS_URL = https:$()//crazybeelabs.com/terms/
+CRAZYBEE_ACCOUNT_URL = https:$(SLASH)$(SLASH)crazybeelabs.com/
+CRAZYBEE_COMMITMENT_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/commitment
+// Page unique « Privacy Policy & Terms of Use — Apps » couvrant toute la famille.
+// crazybeelabs.com/privacy/ et /terms/ renvoient 404 : les pages vivent sous /legal/.
+PRIVACY_POLICY_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/legal/apps
+TERMS_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/legal/apps
 // TODO: only needed once a remote update-check JSON is actually published (Phase 2+).
 REMOTE_CONFIG_URL =
 
