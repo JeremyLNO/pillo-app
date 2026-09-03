@@ -66,6 +66,46 @@ final class PilloUITests: XCTestCase {
         add(attachment)
     }
 
+    /// Produces the App Store listing screenshots (`-screenshotSeed`, richer history than
+    /// the `-demoSeed` fixture). Unlike testTabsRenderAndCaptureScreenshots — which taps by
+    /// index and captures immediately, fine for regression but not for a store listing —
+    /// this one dismisses the notification prompt, waits for each transition to settle and
+    /// asserts it is on the expected screen before shooting.
+    func testCaptureAppStoreScreenshots() {
+        let app = XCUIApplication()
+        app.launchArguments += ["-screenshotSeed"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 10))
+
+        // The permission alert belongs to SpringBoard, not to the app, so it has to be
+        // queried there — otherwise it sits on top of the first screenshot.
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let allow = springboard.buttons["Allow"]
+        if allow.waitForExistence(timeout: 8) {
+            allow.tap()
+        }
+
+        func shoot(_ name: String, expecting title: String) {
+            XCTAssertTrue(app.staticTexts[title].waitForExistence(timeout: 8), "\(name): \(title) introuvable")
+            Thread.sleep(forTimeInterval: 1.2) // let the tab transition settle
+            let attachment = XCTAttachment(screenshot: app.screenshot())
+            attachment.name = name
+            attachment.lifetime = .keepAlways
+            add(attachment)
+        }
+
+        shoot("store-01-Home", expecting: "Pillo Tracker")
+
+        let tabBar = app.tabBars.firstMatch
+        XCTAssertTrue(tabBar.waitForExistence(timeout: 5))
+        let screens = [(1, "store-02-Pack", "Pack"), (2, "store-03-Missed", "Missed pill"),
+                       (3, "store-04-Tracking", "Tracking"), (4, "store-05-Settings", "Settings")]
+        for (index, name, title) in screens {
+            tabBar.buttons.element(boundBy: index).tap()
+            shoot(name, expecting: title)
+        }
+    }
+
     func testConfirmDoseReflectsAcrossScreens() {
         let app = XCUIApplication()
         app.launchArguments += ["-demoSeed"]

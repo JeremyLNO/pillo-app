@@ -11,7 +11,9 @@ struct PilloApp: App {
     init() {
         let launchArguments = ProcessInfo.processInfo.arguments
         let container: ModelContainer
-        if launchArguments.contains("-demoSeed") {
+        if launchArguments.contains("-screenshotSeed") {
+            container = PersistenceController.screenshotPreview()
+        } else if launchArguments.contains("-demoSeed") {
             container = PersistenceController.preview()
         } else {
             container = PersistenceController.make(fresh: launchArguments.contains("-freshInstall"))
