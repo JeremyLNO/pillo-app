@@ -73,13 +73,15 @@ jobs:
           # breaks archiving for every app on the account.
           security default-keychain -s "$KEYCHAIN_PATH"
           rm -f "$RUNNER_TEMP/cert.p12"
-          # Fail loudly rather than let the build "succeed" on a freshly created
-          # certificate. It has to be an "Apple Development" identity specifically:
-          # run 33740416097 proved that a Distribution-only keychain still archives
-          # green while xcodebuild quietly mints "Apple Development: Created via
-          # API" for itself — one slot of the account-wide certificate quota burned
-          # per run, until every app on the account stops archiving. Failing here
-          # costs 20s and mints nothing; the check after the archive is the backstop.
+          # Fail loudly rather than let the build "succeed" on a certificate
+          # xcodebuild created for itself. It has to be an "Apple Development"
+          # identity specifically — that is what the archive step signs with, and a
+          # Distribution-only keychain sends xcodebuild off to make its own.
+          # Note the identity here is legitimately named "Apple Development:
+          # Created via API": that is simply how a certificate issued through the
+          # App Store Connect API is named, not evidence of one being minted per
+          # run. Matching on that name to detect minting is a false positive
+          # (run 33741030465) — the imported certificate carries it too.
           security find-identity -v -p codesigning "$KEYCHAIN_PATH"
           security find-identity -v -p codesigning "$KEYCHAIN_PATH" \
             | grep -q "Apple Development" || {
@@ -103,8 +105,7 @@ jobs:
               CURRENT_PROJECT_VERSION=${{ github.run_number }} \
               -authenticationKeyPath "$HOME/private_keys/AuthKey_${ASC_KEY_ID}.p8" \
               -authenticationKeyID "$ASC_KEY_ID" \
-              -authenticationKeyIssuerID "$ASC_ISSUER_ID" 2>&1 | tee -a "$RUNNER_TEMP/archive.log"
-            return "${PIPESTATUS[0]}"
+              -authenticationKeyIssuerID "$ASC_ISSUER_ID"
           }
           # First run downloads/creates any missing provisioning profiles (esp.
           # for the watch targets) — occasionally the build plan is computed
@@ -112,16 +113,6 @@ jobs:
           # file cannot be found: .../<uuid>.mobileprovision". A second attempt
           # always finds the file already there and succeeds.
           archive || { echo "Retrying archive (profile likely just landed)…"; archive; }
-
-          # Backstop for the keychain guard above: whatever the reason, if the
-          # archive was signed by a certificate xcodebuild created for itself
-          # rather than the imported one, say so instead of shipping and silently
-          # spending another slot of the account's certificate quota.
-          if grep -q "Created via API" "$RUNNER_TEMP/archive.log"; then
-            echo "::error::archive was signed with a certificate xcodebuild minted via the API, not the one imported from IOS_DEV_CERT_P12 — the account certificate quota is being consumed on every run. Put an Apple Development .p12 in that secret."
-            grep -m1 "Signing Identity" "$RUNNER_TEMP/archive.log" || true
-            exit 1
-          fi
 
       - name: Export & upload to TestFlight
         env:
