@@ -57,6 +57,8 @@
 	<string>$(CRAZYBEE_ACCOUNT_URL)</string>
 	<key>CRAZYBEE_COMMITMENT_URL</key>
 	<string>$(CRAZYBEE_COMMITMENT_URL)</string>
+	<key>CRAZYBEE_APPS_URL</key>
+	<string>$(CRAZYBEE_APPS_URL)</string>
 	<key>CRAZYBEE_SUPPORT_URL</key>
 	<string>$(CRAZYBEE_SUPPORT_URL)</string>
 	<key>CRAZYBEE_WEBSITE_URL</key>

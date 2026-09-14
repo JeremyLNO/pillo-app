@@ -25,6 +25,7 @@ CRAZYBEE_SUPPORT_URL = https:$(SLASH)$(SLASH)crazybeelabs.com/support/
 // No dedicated account-creation URL exists yet — falls back to the website root per spec section 19.
 CRAZYBEE_ACCOUNT_URL = https:$(SLASH)$(SLASH)crazybeelabs.com/
 CRAZYBEE_COMMITMENT_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/commitment
+CRAZYBEE_APPS_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/apps
 // Page unique « Privacy Policy & Terms of Use — Apps » couvrant toute la famille.
 // crazybeelabs.com/privacy/ et /terms/ renvoient 404 : les pages vivent sous /legal/.
 PRIVACY_POLICY_URL = https:$(SLASH)$(SLASH)www.crazybeelabs.com/legal/apps

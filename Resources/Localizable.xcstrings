@@ -771,6 +771,76 @@
         }
       }
     },
+    "commitment.footer.otherApps": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsere anderen Apps entdecken"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discover our other apps"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descubre nuestras otras apps"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découvrir nos autres apps"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descobre as nossas outras apps"
+          }
+        }
+      }
+    },
+    "commitment.footer.otherApps.accessibilityLabel": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsere anderen Apps auf crazybeelabs.com entdecken"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discover our other apps at crazybeelabs.com"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descubre nuestras otras apps en crazybeelabs.com"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découvrir nos autres apps sur crazybeelabs.com"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descobre as nossas outras apps em crazybeelabs.com"
+          }
+        }
+      }
+    },
     "commitment.footer.tagline": {
       "extractionState": "manual",
       "localizations": {

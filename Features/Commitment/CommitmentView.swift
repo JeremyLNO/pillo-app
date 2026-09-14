@@ -49,6 +49,8 @@ struct CommitmentView: View {
                 }
 
                 commitmentFooter
+                otherAppsLink
+                    .frame(maxWidth: .infinity)
             }
             .padding(28)
         }
@@ -74,6 +76,29 @@ struct CommitmentView: View {
         .padding(.top, 8)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text("commitment.footer.accessibilityLabel"))
+    }
+
+    /// Second destination, distinct from the commitment link above: this screen says the app
+    /// belongs to a family of free apps, so it should also show where to find them.
+    private var otherAppsLink: some View {
+        Link(destination: configuration.crazyBeeAppsURL) {
+            HStack(spacing: 6) {
+                Image(systemName: "square.grid.2x2.fill")
+                Text("commitment.footer.otherApps")
+                Image(systemName: "arrow.up.right")
+                    .font(.caption2.weight(.bold))
+            }
+            .font(Typography.caption.bold())
+            .foregroundStyle(Palette.primary)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(.ultraThinMaterial, in: Capsule())
+            .overlay(Capsule().strokeBorder(Palette.primary.opacity(0.35), lineWidth: 1))
+        }
+        .buttonStyle(.plain)
+        .padding(.top, 10)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("commitment.footer.otherApps.accessibilityLabel"))
     }
 }
 

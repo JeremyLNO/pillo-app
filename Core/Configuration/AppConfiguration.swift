@@ -14,6 +14,8 @@ struct AppConfiguration: Sendable {
     let crazyBeeSupportURL: URL
     let crazyBeeAccountURL: URL
     let crazyBeeCommitmentURL: URL
+    /// The studio's catalogue — the other free apps this one belongs to.
+    let crazyBeeAppsURL: URL
     let privacyPolicyURL: URL
     let termsURL: URL
     let remoteConfigURL: URL?
@@ -39,6 +41,7 @@ struct AppConfiguration: Sendable {
         crazyBeeSupportURL = url("CRAZYBEE_SUPPORT_URL", default: "https://crazybeelabs.com/support/")
         crazyBeeAccountURL = url("CRAZYBEE_ACCOUNT_URL", default: "https://crazybeelabs.com/")
         crazyBeeCommitmentURL = url("CRAZYBEE_COMMITMENT_URL", default: "https://www.crazybeelabs.com/commitment")
+        crazyBeeAppsURL = url("CRAZYBEE_APPS_URL", default: "https://www.crazybeelabs.com/apps")
         privacyPolicyURL = url("PRIVACY_POLICY_URL", default: "https://www.crazybeelabs.com/legal/apps")
         termsURL = url("TERMS_URL", default: "https://www.crazybeelabs.com/legal/apps")
         let remoteConfigString = string("REMOTE_CONFIG_URL", default: "")
