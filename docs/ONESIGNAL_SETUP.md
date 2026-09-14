@@ -6,13 +6,13 @@ OneSignal is used **exclusively** for CrazyBeeLabs announcements, app-update not
 
 1. Sign in at [onesignal.com](https://onesignal.com) and create a new app named "Pillo".
 2. Under **Settings ▸ Platforms**, add **Apple iOS (APNs)**.
-3. Copy the **OneSignal App ID** shown after setup — paste it into `Config/Base.xcconfig`'s `ONESIGNAL_APP_ID`. Until this is a real ID, `OneSignalService.initialize(appId:)` no-ops (checked by a `TODO_` prefix guard) — the app stays fully functional either way.
+3. **Done:** the app exists (organisation **Crazy Bee Labs**) and its App ID `04e7f4c8-7d2c-4044-83ba-1bcc517a09ed` is in `Config/Base.xcconfig`'s `ONESIGNAL_APP_ID`. Replacing it with the `TODO_` placeholder makes `OneSignalService.initialize(appId:)` a no-op again — the app stays fully functional either way.
 
 ## 2. Upload an APNs authentication key
 
 OneSignal needs a `.p8` APNs key (not a legacy certificate) to deliver pushes:
 
-1. In the [Apple Developer portal](https://developer.apple.com/account/resources/authkeys/list), create a new key with the **Apple Push Notifications service (APNs)** capability enabled. Download the `.p8` file — Apple only lets you download it once.
+1. **Done:** key `226GZ743S5` (« Crazy Bee Labs APNs », *Production* only / Team Scoped) is uploaded to every Crazy Bee Labs OneSignal app, and the `.p8` sits in `~/private_keys/`. Note the account already held two *Sandbox & Production* keys — Apple's cap — and a third was only accepted because it is **Production-only**; those quotas are counted separately. Apple lets you download a `.p8` once and never again.
 2. Note the **Key ID** and your **Team ID** (top-right of the developer portal).
 3. In OneSignal's iOS platform settings, upload the `.p8`, Key ID, and Team ID together with the app's bundle ID (`company.lno.pillo`).
 
