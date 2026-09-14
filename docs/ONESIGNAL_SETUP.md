@@ -18,14 +18,14 @@ OneSignal needs a `.p8` APNs key (not a legacy certificate) to deliver pushes:
 
 ## 3. Entitlements
 
-`App/Pillo.entitlements` already declares:
+`App/Pillo.entitlements` declares:
 
 ```xml
 <key>aps-environment</key>
-<string>development</string>
+<string>production</string>
 ```
 
-Xcode automatically rewrites this to `production` during an Archive build when the provisioning profile is a distribution profile — verify this after your first TestFlight/App Store archive rather than assuming it.
+`production` **even in Debug**, and deliberately so: the real APNs environment is picked by the provisioning profile, while this value is taken literally. A `development` value in a build that ships through TestFlight yields a token the production APNs server rejects *in silence* — no error anywhere, pushes simply never arrive. Dashcam Pocket hit exactly that; every Crazy Bee Labs app now carries `production`.
 
 ## 4. SPM dependency
 
