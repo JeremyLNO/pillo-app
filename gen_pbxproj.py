@@ -23,10 +23,11 @@ TEST_SOURCE_DIR = "Tests"
 UITEST_SOURCE_DIR = "UITests"
 RESOURCES_DIR = "Resources"
 
-# SPM Swift Package dependencies (app target only). Same package/version this dev
-# account already uses successfully in ~/lno-ios-app.
+# Paquets SPM (target app seulement), vendorés sous Vendor/ : la résolution distante
+# d'OneSignal s'enlise par moments sur les runners GitHub (7 binaryTarget, ~117 Mo tirés
+# des releases, que rien ne borne). Chemin relatif à la racine du projet.
 SPM_PACKAGES = [
-    ("OneSignal-XCFramework", "https://github.com/OneSignal/OneSignal-XCFramework", "5.5.1", ["OneSignalFramework"]),
+    ("OneSignalXCFramework", "Vendor/OneSignalXCFramework", ["OneSignalFramework"]),
 ]
 
 # Native targets beyond the main app + its unit/UI test bundles. Each embeds into `host`
@@ -222,7 +223,7 @@ xcstrings_build_file = uid("buildfile.xcstrings")
 pkg_refs = {}
 product_deps = {}
 product_build_files = {}
-for name, url, version, products in SPM_PACKAGES:
+for name, path, products in SPM_PACKAGES:
     pkg_refs[name] = uid("pkgref." + name)
     for prod in products:
         product_deps[prod] = uid("proddep." + prod)
@@ -597,7 +598,7 @@ L('\t\t\t);')
 L('\t\t\tmainGroup = %s;' % main_group)
 L('\t\t\tpackageReferences = (')
 for name in pkg_refs:
-    L('\t\t\t\t%s /* XCRemoteSwiftPackageReference "%s" */,' % (pkg_refs[name], name))
+    L('\t\t\t\t%s /* XCLocalSwiftPackageReference "%s" */,' % (pkg_refs[name], dict((n, p) for n, p, _ in SPM_PACKAGES)[name]))
 L('\t\t\t);')
 L('\t\t\tproductRefGroup = %s /* Products */;' % products_group)
 L('\t\t\tprojectDirPath = "";')
@@ -658,24 +659,20 @@ for ext in EXTENSION_TARGETS:
 L("/* End PBXTargetDependency section */")
 
 if SPM_PACKAGES:
-    L("\n/* Begin XCRemoteSwiftPackageReference section */")
-    for name, url, version, products in SPM_PACKAGES:
-        L('\t\t%s /* XCRemoteSwiftPackageReference "%s" */ = {' % (pkg_refs[name], name))
-        L('\t\t\tisa = XCRemoteSwiftPackageReference;')
-        L('\t\t\trepositoryURL = "%s";' % url)
-        L('\t\t\trequirement = {')
-        L('\t\t\t\tkind = exactVersion;')
-        L('\t\t\t\tversion = %s;' % version)
-        L('\t\t\t};')
+    L("\n/* Begin XCLocalSwiftPackageReference section */")
+    for name, path, products in SPM_PACKAGES:
+        L('\t\t%s /* XCLocalSwiftPackageReference "%s" */ = {' % (pkg_refs[name], path))
+        L('\t\t\tisa = XCLocalSwiftPackageReference;')
+        L('\t\t\trelativePath = "%s";' % path)
         L('\t\t};')
-    L("/* End XCRemoteSwiftPackageReference section */")
+    L("/* End XCLocalSwiftPackageReference section */")
 
     L("\n/* Begin XCSwiftPackageProductDependency section */")
-    for name, url, version, products in SPM_PACKAGES:
+    for name, path, products in SPM_PACKAGES:
         for prod in products:
             L('\t\t%s /* %s */ = {' % (product_deps[prod], prod))
             L('\t\t\tisa = XCSwiftPackageProductDependency;')
-            L('\t\t\tpackage = %s /* XCRemoteSwiftPackageReference "%s" */;' % (pkg_refs[name], name))
+            L('\t\t\tpackage = %s /* XCLocalSwiftPackageReference "%s" */;' % (pkg_refs[name], path))
             L('\t\t\tproductName = %s;' % prod)
             L('\t\t};')
     L("/* End XCSwiftPackageProductDependency section */")
